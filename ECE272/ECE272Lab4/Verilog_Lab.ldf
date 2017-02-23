@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="2.0" title="Verilog_Lab" device="LCMXO2-7000HE-4TG144C" synthesis="lse" default_implementation="Verilog_Lab">
+    <Options/>
+    <Implementation title="Verilog_Lab" dir="Verilog_Lab" description="Verilog_Lab" default_strategy="Strategy1">
+        <Options/>
+        <Source name="../LED State Machine/Source Files/Clock_Counter.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../LED State Machine/Source Files/LED_FSM_top.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../LED State Machine/Source Files/State_Machine.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Verilog_Lab.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Verilog_Lab1.sty"/>
+</BaliProject>

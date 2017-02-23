@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "ece272_lab2_ece272_lab2.log"
+-o "ece272_lab2_ece272_lab2.csv"
+-pr "ece272_lab2_ece272_lab2.prf"

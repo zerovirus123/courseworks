@@ -1,0 +1,200 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 2.2.0.101
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2013 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Jun 04 10:25:32 2014
+
+
+Command Line:  synthesis -f ECE272Final_ECE272Final_lattice.synproj 
+
+-- all messages logged in file synthesis.log
+
+<A name="lse_synopt"></A><B><U><big>Synthesis Options</big></U></B>
+
+INFO: Synthesis Options: (LSE-1022)
+INFO: -a option is = MachXO2
+INFO: -s option is = 4
+INFO: -t option is = TQFP144
+INFO: -d option is = LCMXO2-7000HE
+INFO: Using package TQFP144
+INFO: Using performance grade 4
+INFO:                                                           
+INFO: ##########################################################
+INFO: ### Lattice Family : MachXO2A
+INFO: ### Device  : LCMXO2-7000HE
+INFO: ### Package : TQFP144
+INFO: ### Speed   : 4
+INFO: ##########################################################
+INFO:                                                           
+INFO: Optimization Goal = Balanced
+INFO: Top level module name = checkpoint2
+INFO: Target Frequency = 200.000000 MHz
+INFO: Max Fanout = 1000
+INFO: Timing Path count = 3
+INFO: bram Utilization = 100.000000 %
+INFO: dsp usage = TRUE (default)
+INFO: dsp utilization = 100 (default)
+INFO: fsm_encoding_style = auto
+INFO: resolve_mixed_drivers = 0
+INFO: fix_gated_clocks = 1
+INFO: Mux style = Auto
+INFO: Use Carry Chain = TRUE
+INFO: carry_chain_length = 0
+INFO: Use IO Insertion = TRUE
+INFO: Use IO Reg = TRUE
+INFO: Resource Sharing = TRUE
+INFO: Propagate Constants = TRUE
+INFO: Remove Duplicate Registers = TRUE
+INFO: force_gsr = auto
+INFO: ROM style = auto
+INFO: RAM style = auto
+INFO: -comp option is FALSE
+INFO: -syn option is FALSE
+INFO: -p Z:/Windows.Documents/Desktop/ECE272Final (searchpath added)
+INFO: -p C:/lscc/diamond/2.2_x64/ispfpga/xo2c00/data (searchpath added)
+INFO: -p Z:/Windows.Documents/Desktop/ECE272Final/ECE272Final (searchpath added)
+INFO: -p Z:/Windows.Documents/Desktop/ECE272Final (searchpath added)
+INFO: Verilog design file = Z:/Windows.Documents/Desktop/ECE272Final/FinalProject.v
+INFO: Ngd file = ECE272Final_ECE272Final.ngd
+INFO: -sdc option: sdc file input not used
+INFO: -lpf option: output file option is OFF
+INFO: hardtimer checking is enabled (default); -dt option not used
+INFO: -r option is OFF [ Remove LOC Properties is OFF ]
+-- Technology check ok...MachXO, MachXO2...
+INFO: * compile design *
+
+<A name="lse_comp"></A><B><U><big>Compile Design</big></U></B>
+
+INFO: Compile Design Begin
+z:/windows.documents/desktop/ece272final/finalproject.v(71): INFO: compiling module checkpoint2 (VERI-1018)
+C:/lscc/diamond/2.2_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): INFO: compiling module OSCH(NOM_FREQ="2.08") (VERI-1018)
+z:/windows.documents/desktop/ece272final/finalproject.v(100): INFO: compiling module sevenseg (VERI-1018)
+INFO: Top level module name = checkpoint2
+
+
+INFO: GSR Instance connected to net: n52 (LSE-1149)
+WARNING: No lpf file will be written because -lpf option is not used or set to 0
+INFO: Applying 200.000000 MHz constraint to all clocks (LSE-5000)
+INFO: Results of ngd drc checks are available in checkpoint2_drc.log
+INFO: All blocks are expanded and NGD expansion is successful
+INFO: Writing ngd file ECE272Final_ECE272Final.ngd
+
+################### Begin Area Report (checkpoint2)######################
+Number of register bits => 15 of 6864 (0 % )
+CCU2D => 8
+FD1S3AX => 15
+GSR => 1
+IB => 1
+LUT4 => 6
+OB => 10
+OSCH => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : osc, loads : 15
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : count_13, loads : 6
+  Net : count_14, loads : 6
+  Net : g_o_c, loads : 2
+  Net : reset_c, loads : 1
+  Net : display_c, loads : 1
+  Net : n52, loads : 1
+  Net : n15, loads : 1
+  Net : n81, loads : 1
+  Net : n59, loads : 1
+  Net : n67, loads : 1
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets osc]                     |            -|            -|     0  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 58.773  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.250  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

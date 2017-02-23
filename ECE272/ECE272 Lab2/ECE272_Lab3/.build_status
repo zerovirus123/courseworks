@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Convert_HDL" build_result="2" build_time="1398890276">
+            <Task name="HDL_Conv" build_result="2" update_result="0" update_time="1398890276"/>
+        </Milestone>
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1399484038"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1398890334"/>
+            <Task name="BitgenXO2" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Generate_HDL" build_result="2" build_time="1398890276">
+            <Task name="HDL_Gen" build_result="2" update_result="0" update_time="1398890276"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1398890329">
+            <Task name="Map" build_result="2" update_result="0" update_time="1398890329"/>
+            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1398890331">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1398890331"/>
+            <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1398890322">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1398890322"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1398890283"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="0" update_result="2" update_time="0"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
+        </Milestone>
+        <Report name="ECE272_Lab3_ECE272_Lab3.bgn" last_build_time="1398890334" last_build_size="3943"/>
+        <Report name="ECE272_Lab3_ECE272_Lab3.jed" last_build_time="1398890334" last_build_size="1464721"/>
+        <Report name="ECE272_Lab3_ECE272_Lab3.lsedata" last_build_time="1398890276" last_build_size="21288"/>
+        <Report name="ECE272_Lab3_ECE272_Lab3.ncd" last_build_time="1398890331" last_build_size="30169"/>
+        <Report name="ECE272_Lab3_ECE272_Lab3.ngd" last_build_time="1398890321" last_build_size="13539"/>
+        <Report name="ECE272_Lab3_ECE272_Lab3_map.ncd" last_build_time="1398890328" last_build_size="20954"/>
+        <Report name="ECE272_Lab3_ECE272_Lab3_vo.sdf" last_build_time="1399484038" last_build_size="19035"/>
+        <Report name="ECE272_Lab3_ECE272_Lab3_vo.vo" last_build_time="1399484038" last_build_size="17824"/>
+        <Report name="lab3_schematic.v" last_build_time="1398890275" last_build_size="2962"/>
+    </Strategy>
+</BuildStatus>

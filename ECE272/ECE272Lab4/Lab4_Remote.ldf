@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="2.0" title="Lab4_Remote" device="LCMXO2-7000HE-4TG144C" synthesis="lse" default_implementation="Lab4_Remote">
+    <Options/>
+    <Implementation title="Lab4_Remote" dir="Lab4_Remote" description="Lab4_Remote" default_strategy="Strategy1">
+        <Options def_top="SmartRemote"/>
+        <Source name="../ECE272 Lab2/ece272_lab2/RemoteControllerSchematic.sch" type="Schematic" type_short="Schematic">
+            <Options/>
+        </Source>
+        <Source name="Smart_Remote.v" type="Verilog" type_short="Verilog">
+            <Options top_module="SmartRemote"/>
+        </Source>
+        <Source name="Lab4_Remote.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="Lab4_Remote/Lab4_Remote.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="smart_remote/smart_remote.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Lab4_Remote1.sty"/>
+</BaliProject>

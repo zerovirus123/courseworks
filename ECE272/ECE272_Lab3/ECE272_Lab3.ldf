@@ -1,0 +1,26 @@
+
+<BaliProject version="2.0" title="ECE272_Lab3" device="LCMXO2-7000HE-4TG144C" synthesis="lse" default_implementation="ECE272_Lab3">
+    <Options>
+        <Option name="HDL type" value="Verilog"/>
+    </Options>
+    <Implementation title="ECE272_Lab3" dir="ECE272_Lab3" description="ECE272_Lab3" default_strategy="Strategy1">
+        <Options>
+            <Option name="HDL type" value="Verilog"/>
+            <Option name="HDL_PARAM" value=""/>
+            <Option name="VERILOG_DIRECTIVES" value=""/>
+            <Option name="include path" value=""/>
+            <Option name="lib" value="work"/>
+            <Option name="top" value=""/>
+        </Options>
+        <Source name="lab3_schematic.sch" type="Schematic" type_short="Schematic">
+            <Options>
+                <Option name="HDL type" value="Verilog"/>
+                <Option name="include path" value=""/>
+                <Option name="lib" value="work"/>
+            </Options>
+        </Source>
+        <Source name="ECE272_Lab3.lpf" type="Logic Preference" type_short="LPF"/>
+        <Source name="ECE272_Lab3/ECE272_Lab3.xcf" type="Programming Project File" type_short="Programming"/>
+    </Implementation>
+    <Strategy name="Strategy1" file="ECE272_Lab31.sty"/>
+</BaliProject>

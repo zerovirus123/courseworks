@@ -1,0 +1,19 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Wed Apr 30 13:38:54 2014 *
+NOTE DESIGN NAME: lab3_schematic *
+NOTE DEVICE NAME: LCMXO2-7000HE-4TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS B : 39 : in *
+NOTE PINS A : 38 : in *
+NOTE PINS seg_g : 106 : out *
+NOTE PINS seg_f : 105 : out *
+NOTE PINS seg_e : 104 : out *
+NOTE PINS seg_d : 100 : out *
+NOTE PINS seg_c : 99 : out *
+NOTE PINS seg_b : 98 : out *
+NOTE PINS seg_a : 97 : out *
+NOTE PINS C : 40 : in *
+NOTE PINS D : 42 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

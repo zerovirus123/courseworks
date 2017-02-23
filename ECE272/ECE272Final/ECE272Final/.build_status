@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="0" update_result="2" update_time="1401308317"/>
+            <Task name="BitgenXO2" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Map" build_result="0" build_time="1401308306">
+            <Task name="Map" build_result="0" update_result="2" update_time="1401308306"/>
+            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="0" build_time="1401308314">
+            <Task name="PAR" build_result="0" update_result="2" update_time="1401308314"/>
+            <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1401902733">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1401902733"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1401902733"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1401902732"/>
+        </Milestone>
+        <Report name="ECE272Final_ECE272Final.bgn" last_build_time="1401308317" last_build_size="3941"/>
+        <Report name="ECE272Final_ECE272Final.jed" last_build_time="1401308317" last_build_size="1464988"/>
+        <Report name="ECE272Final_ECE272Final.lsedata" last_build_time="1401902732" last_build_size="15427"/>
+        <Report name="ECE272Final_ECE272Final.ncd" last_build_time="1401308314" last_build_size="27692"/>
+        <Report name="ECE272Final_ECE272Final.ngd" last_build_time="1401902733" last_build_size="23552"/>
+        <Report name="ECE272Final_ECE272Final_map.ncd" last_build_time="1401308306" last_build_size="21876"/>
+    </Strategy>
+</BuildStatus>

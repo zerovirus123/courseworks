@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="2.0" title="Section5" device="LCMXO2-7000HE-4TG144C" synthesis="lse" default_implementation="Section5">
+    <Options/>
+    <Implementation title="Section5" dir="Section5" description="Section5" default_strategy="Strategy1">
+        <Options/>
+        <Source name="DigitalAnalog.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Section5.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="Section51.sty"/>
+</BaliProject>

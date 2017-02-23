@@ -1,0 +1,167 @@
+#!/bin/bash
+
+#pound sign comments adjacent to loop initialization must have a space separating them!
+
+#indicates the first two character of argument 1
+initial=${1:0:2}
+
+filename=$2 #name of testfile
+
+dir="$PWD" #current working directory
+nofile=0 #flag is triggered if no input file is supplied
+
+#single [] are POSIX compliant condition tests
+#double [] is a bash extension. need this if you want to execute your bracket statements
+
+#if no row or column option is provided
+if [[ -z "$1" ]]
+then
+echo "Usage: stats {rows | cols} [file]"
+exit 1
+fi
+
+#if not giving the proper row/column indicator
+if [[ $initial -ne "-r" ]] || [[ $initial -ne "-c" ]]
+then
+echo "Usage: stats {rows | cols} [file]"
+exit 1
+fi
+
+#if too many arguments provided
+if [[ "$#" -ge 3 ]]
+then
+echo "Usage: stats {rows | cols} [file]"
+exit 1
+fi
+
+#check to see if the optional file argument is provided
+if [[ -z "$2" ]]
+then
+nofile=1
+cat > user_input.txt
+filename=user_input.txt
+fi
+
+#check if the supplied file exist. if it doesn't, program ends
+if [[ ! -f $filename  ]]
+then
+1>&2 echo "Error: File does not exist"
+exit 1
+fi
+
+#check to see if the input file is readable
+if [[ ! -r $filename ]]
+then
+1>&2 echo "Error: Input file is not readable"
+exit 1
+fi
+
+#see if input file is empty
+if [[ ! -s $filename && $nofile == 0 ]]
+then
+echo "Error: File is empty"
+exit 1
+fi
+
+#if row is selected
+#no expr is used, as it is an outdated feature
+#modern bash shells work well with C/C++ style increments and arithmetic evaluations
+if [[ $initial ==  "-r" ]]
+then
+median=0
+echo "Calculating row stats"
+echo "Average	Median"
+
+while read -a rows #-a refers to aname. words assigned to sequential indices of array variable aname
+do
+total=0
+sum=0
+array=()
+for index in "${rows[@]}" #for every item in rows. @ here is the positional parameter
+do
+((sum += $index))
+((total++))
+array=("${array[@]}" "$index" )	#appending to an array
+done
+
+#array sorting and median calculation here
+sortedArray=( $( printf "%s\n" "${array[@]}" | sort -n ))
+arrayLength=${#sortedArray[@]}
+
+if [[ $(( arrayLength % 2 )) -eq 0 ]]
+then
+#echo "Even array"
+upper=$(( arrayLength / 2))
+lower=$(( (arrayLength/2) - 1))
+median=$(( (${sortedArray[lower]} + ${sortedArray[upper]}) / 2  ))
+else
+#echo "Odd array"
+middle=$(( (arrayLength) / 2))
+median=${sortedArray[middle]}
+fi
+
+echo $((sum/total)) $"      "  $median
+done <$filename
+exit 0
+fi
+
+#if column is choosen instead
+if [[ $initial == "-c" ]]
+then
+echo "Calculating column stats"
+
+#transpose columns to row to make life easier
+WORD=$(head -n 1 $filename | wc -w); #counts the number of columns
+for((index=1; index<=$WORD; index++)) #loop it over the number of columns
+do
+awk '{print $'$index'}' $filename | tr '\n' '	';echo; #compact way of performing a row-col transposition
+#prints the column as determined by $index, and then translates new-line with a tab
+done > tmp.txt
+
+#calculate average and median, just like the one used for rows
+while read -a cols
+do
+total=0
+sum=0
+array=()
+for number in "${cols[@]}" #for every item in the transposed column
+do
+(( sum += $number )) #the total sum of the numbers in the column
+(( total++ )) #the  number of items in the column
+array=("${array[@]}" "$number")
+done
+
+sortedArray=( $( printf "%s\n" "${array[@]}" | sort -n) )
+arrayLength=${#sortedArray[@]}
+
+#echo sorted array is $sortedArray
+#based on array length, construct the median array
+if [[ $(( arrayLength % 2 )) -eq 0 ]]
+then #even
+upper=$(( arrayLength / 2 ))
+lower=$(( (arrayLength/2) - 1 ))
+median=$(( (${sortedArray[lower]} + ${sortedArray[upper]}) / 2  ))
+medianArray=("${medianArray[@]}" "$median")
+else #odd
+middle=$(( (arrayLength) / 2 ))
+median=${sortedArray[middle]}
+medianArray=("${medianArray[@]}" "$median")
+fi
+averageArray+=( $((sum/total)) )  #the final row array of averages that will be displayed
+#echo ${averageArray[@]}
+done < tmp.txt
+echo Averages:
+echo ${averageArray[@]}
+echo Medians:
+echo ${medianArray[@]}
+
+#finally, remove the file you don't need
+if [[ -r tmp.txt  ]]; then
+rm tmp.txt
+
+fi
+
+if [[ -r user_input.txt ]]; then
+rm user_input.txt
+fi
+fi

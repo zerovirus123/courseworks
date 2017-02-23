@@ -1,0 +1,223 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 2.2.0.101
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2013 Lattice Semiconductor Corporation,  All rights reserved.
+Wed May 28 08:35:04 2014
+
+
+Command Line:  synthesis -f DigitalAnalog_DigitalAnalog_lattice.synproj 
+
+-- all messages logged in file synthesis.log
+
+<A name="lse_synopt"></A><B><U><big>Synthesis Options</big></U></B>
+
+INFO: Synthesis Options: (LSE-1022)
+INFO: -a option is = MachXO2
+INFO: -s option is = 4
+INFO: -t option is = TQFP144
+INFO: -d option is = LCMXO2-7000HE
+INFO: Using package TQFP144
+INFO: Using performance grade 4
+INFO:                                                           
+INFO: ##########################################################
+INFO: ### Lattice Family : MachXO2A
+INFO: ### Device  : LCMXO2-7000HE
+INFO: ### Package : TQFP144
+INFO: ### Speed   : 4
+INFO: ##########################################################
+INFO:                                                           
+INFO: Optimization Goal = Balanced
+INFO: Top level module name = DigitalAnalog
+INFO: Target Frequency = 200.000000 MHz
+INFO: Max Fanout = 1000
+INFO: Timing Path count = 3
+INFO: bram Utilization = 100.000000 %
+INFO: dsp usage = TRUE (default)
+INFO: dsp utilization = 100 (default)
+INFO: fsm_encoding_style = auto
+INFO: resolve_mixed_drivers = 0
+INFO: fix_gated_clocks = 1
+INFO: Mux style = Auto
+INFO: Use Carry Chain = TRUE
+INFO: carry_chain_length = 0
+INFO: Use IO Insertion = TRUE
+INFO: Use IO Reg = TRUE
+INFO: Resource Sharing = TRUE
+INFO: Propagate Constants = TRUE
+INFO: Remove Duplicate Registers = TRUE
+INFO: force_gsr = auto
+INFO: ROM style = auto
+INFO: RAM style = auto
+INFO: -comp option is FALSE
+INFO: -syn option is FALSE
+INFO: -p Z:/Windows.Documents/Desktop/ECE272Lab5 (searchpath added)
+INFO: -p C:/lscc/diamond/2.2_x64/ispfpga/xo2c00/data (searchpath added)
+INFO: -p Z:/Windows.Documents/Desktop/ECE272Lab5/DigitalAnalog (searchpath added)
+INFO: -p Z:/Windows.Documents/Desktop/ECE272Lab5 (searchpath added)
+INFO: Verilog design file = Z:/Windows.Documents/Desktop/ECE272Lab5/digital_analog.v
+INFO: Ngd file = DigitalAnalog_DigitalAnalog.ngd
+INFO: -sdc option: sdc file input not used
+INFO: -lpf option: output file option is OFF
+INFO: hardtimer checking is enabled (default); -dt option not used
+INFO: -r option is OFF [ Remove LOC Properties is OFF ]
+-- Technology check ok...MachXO, MachXO2...
+INFO: * compile design *
+
+<A name="lse_comp"></A><B><U><big>Compile Design</big></U></B>
+
+INFO: Compile Design Begin
+z:/windows.documents/desktop/ece272lab5/digital_analog.v(2): INFO: compiling module DigitalAnalog (VERI-1018)
+C:/lscc/diamond/2.2_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): INFO: compiling module OSCH(NOM_FREQ="2.08") (VERI-1018)
+z:/windows.documents/desktop/ece272lab5/digital_analog.v(79): INFO: compiling module clock_counter (VERI-1018)
+INFO: Top level module name = DigitalAnalog
+
+Extracted state machine for register: state
+State machine has 8 states with original encoding
+original encoding -> new encoding (OneHot Encoding)
+ 000 -> 00000001
+ 001 -> 00000010
+ 010 -> 00000100
+ 011 -> 00001000
+ 100 -> 00010000
+ 101 -> 00100000
+ 110 -> 01000000
+ 111 -> 10000000
+ Number of Reachable States for this State Machine are 5 
+
+
+
+WARNING: Bit 0 of Register state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 1 of Register state_FSM is stuck at Zero (VDB-5010)
+WARNING: Bit 2 of Register state_FSM is stuck at Zero (VDB-5010)
+INFO: GSR Instance connected to net: reset_c (LSE-1149)
+WARNING: No lpf file will be written because -lpf option is not used or set to 0
+INFO: Applying 200.000000 MHz constraint to all clocks (LSE-5000)
+INFO: Results of ngd drc checks are available in DigitalAnalog_drc.log
+INFO: All blocks are expanded and NGD expansion is successful
+INFO: Writing ngd file DigitalAnalog_DigitalAnalog.ngd
+
+################### Begin Area Report (DigitalAnalog)######################
+Number of register bits => 26 of 6864 (0 % )
+CCU2D => 11
+FD1S3AX => 5
+FD1S3IX => 20
+FD1S3JX => 1
+GSR => 1
+IB => 3
+LUT4 => 13
+OB => 4
+OSCH => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : osc, loads : 21
+  Net : clock2, loads : 5
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : n29, loads : 21
+  Net : n61, loads : 5
+  Net : R_bump_c, loads : 3
+  Net : L_bump_c, loads : 2
+  Net : n57, loads : 2
+  Net : n59, loads : 2
+  Net : count_0, loads : 2
+  Net : count_19, loads : 2
+  Net : count_4, loads : 2
+  Net : count_3, loads : 2
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets clock2]                  |  200.000 MHz|  285.714 MHz|     2  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets osc]                     |            -|            -|     0  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 59.816  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.343  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

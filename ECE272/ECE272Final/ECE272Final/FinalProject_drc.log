@@ -1,0 +1,16 @@
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'ADC/dff_15_11_add_4_9/CO' has no load
+WARNING - synthesis: logical net 'ADC/dff_15_11_add_4_9/S1' has no load
+WARNING - synthesis: logical net 'ADC/dff_15_11_add_4_1/S0' has no load
+WARNING - synthesis: DRC complete with 3 warnings
+
+Design Results:
+     46 blocks expanded
+completed the first expansion

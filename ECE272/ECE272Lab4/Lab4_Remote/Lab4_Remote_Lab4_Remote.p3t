@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Lab4_Remote_Lab4_Remote.log"
+-o "Lab4_Remote_Lab4_Remote.csv"
+-pr "Lab4_Remote_Lab4_Remote.prf"

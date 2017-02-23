@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1401291336"/>
+            <Task name="BitgenXO2" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1401291328">
+            <Task name="Map" build_result="2" update_result="0" update_time="1401291328"/>
+            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1401291333">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1401291333"/>
+            <Task name="PARTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1401291305">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1401291305"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1401291305"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1401291906"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="0"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
+        </Milestone>
+        <Report name="DigitalAnalog_DigitalAnalog.bgn" last_build_time="1401291336" last_build_size="3961"/>
+        <Report name="DigitalAnalog_DigitalAnalog.jed" last_build_time="1401291336" last_build_size="1464621"/>
+        <Report name="DigitalAnalog_DigitalAnalog.lsedata" last_build_time="1401291304" last_build_size="34556"/>
+        <Report name="DigitalAnalog_DigitalAnalog.ncd" last_build_time="1401291333" last_build_size="37746"/>
+        <Report name="DigitalAnalog_DigitalAnalog.ngd" last_build_time="1401291305" last_build_size="33812"/>
+        <Report name="DigitalAnalog_DigitalAnalog_map.ncd" last_build_time="1401291328" last_build_size="27503"/>
+    </Strategy>
+</BuildStatus>

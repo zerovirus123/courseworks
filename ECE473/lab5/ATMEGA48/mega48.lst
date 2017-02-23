@@ -1,0 +1,935 @@
+
+mega48.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  000004a0  00000534  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000004a0  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000073  00800100  00800100  00000534  2**0
+                  ALLOC
+  3 .comment      00000011  00000000  00000000  00000534  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000068  00000000  00000000  00000548  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0000094f  00000000  00000000  000005b0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000035b  00000000  00000000  00000eff  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002c8  00000000  00000000  0000125a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000148  00000000  00000000  00001524  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000002d3  00000000  00000000  0000166c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000002ce  00000000  00000000  0000193f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000030  00000000  00000000  00001c0d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	6a c0       	rjmp	.+212    	; 0xd6 <__ctors_end>
+   2:	79 c0       	rjmp	.+242    	; 0xf6 <__bad_interrupt>
+   4:	78 c0       	rjmp	.+240    	; 0xf6 <__bad_interrupt>
+   6:	77 c0       	rjmp	.+238    	; 0xf6 <__bad_interrupt>
+   8:	76 c0       	rjmp	.+236    	; 0xf6 <__bad_interrupt>
+   a:	75 c0       	rjmp	.+234    	; 0xf6 <__bad_interrupt>
+   c:	74 c0       	rjmp	.+232    	; 0xf6 <__bad_interrupt>
+   e:	73 c0       	rjmp	.+230    	; 0xf6 <__bad_interrupt>
+  10:	72 c0       	rjmp	.+228    	; 0xf6 <__bad_interrupt>
+  12:	71 c0       	rjmp	.+226    	; 0xf6 <__bad_interrupt>
+  14:	70 c0       	rjmp	.+224    	; 0xf6 <__bad_interrupt>
+  16:	6f c0       	rjmp	.+222    	; 0xf6 <__bad_interrupt>
+  18:	6e c0       	rjmp	.+220    	; 0xf6 <__bad_interrupt>
+  1a:	6d c0       	rjmp	.+218    	; 0xf6 <__bad_interrupt>
+  1c:	6c c0       	rjmp	.+216    	; 0xf6 <__bad_interrupt>
+  1e:	6b c0       	rjmp	.+214    	; 0xf6 <__bad_interrupt>
+  20:	6a c0       	rjmp	.+212    	; 0xf6 <__bad_interrupt>
+  22:	69 c0       	rjmp	.+210    	; 0xf6 <__bad_interrupt>
+  24:	68 c0       	rjmp	.+208    	; 0xf6 <__bad_interrupt>
+  26:	67 c0       	rjmp	.+206    	; 0xf6 <__bad_interrupt>
+  28:	66 c0       	rjmp	.+204    	; 0xf6 <__bad_interrupt>
+  2a:	65 c0       	rjmp	.+202    	; 0xf6 <__bad_interrupt>
+  2c:	64 c0       	rjmp	.+200    	; 0xf6 <__bad_interrupt>
+  2e:	63 c0       	rjmp	.+198    	; 0xf6 <__bad_interrupt>
+  30:	63 c0       	rjmp	.+198    	; 0xf8 <__vector_24>
+  32:	61 c0       	rjmp	.+194    	; 0xf6 <__bad_interrupt>
+  34:	9c c0       	rjmp	.+312    	; 0x16e <__vector_24+0x76>
+  36:	75 c0       	rjmp	.+234    	; 0x122 <__vector_24+0x2a>
+  38:	74 c0       	rjmp	.+232    	; 0x122 <__vector_24+0x2a>
+  3a:	73 c0       	rjmp	.+230    	; 0x122 <__vector_24+0x2a>
+  3c:	72 c0       	rjmp	.+228    	; 0x122 <__vector_24+0x2a>
+  3e:	71 c0       	rjmp	.+226    	; 0x122 <__vector_24+0x2a>
+  40:	70 c0       	rjmp	.+224    	; 0x122 <__vector_24+0x2a>
+  42:	6f c0       	rjmp	.+222    	; 0x122 <__vector_24+0x2a>
+  44:	94 c0       	rjmp	.+296    	; 0x16e <__vector_24+0x76>
+  46:	6d c0       	rjmp	.+218    	; 0x122 <__vector_24+0x2a>
+  48:	6c c0       	rjmp	.+216    	; 0x122 <__vector_24+0x2a>
+  4a:	6b c0       	rjmp	.+214    	; 0x122 <__vector_24+0x2a>
+  4c:	6a c0       	rjmp	.+212    	; 0x122 <__vector_24+0x2a>
+  4e:	69 c0       	rjmp	.+210    	; 0x122 <__vector_24+0x2a>
+  50:	68 c0       	rjmp	.+208    	; 0x122 <__vector_24+0x2a>
+  52:	67 c0       	rjmp	.+206    	; 0x122 <__vector_24+0x2a>
+  54:	96 c0       	rjmp	.+300    	; 0x182 <__vector_24+0x8a>
+  56:	65 c0       	rjmp	.+202    	; 0x122 <__vector_24+0x2a>
+  58:	64 c0       	rjmp	.+200    	; 0x122 <__vector_24+0x2a>
+  5a:	63 c0       	rjmp	.+198    	; 0x122 <__vector_24+0x2a>
+  5c:	62 c0       	rjmp	.+196    	; 0x122 <__vector_24+0x2a>
+  5e:	61 c0       	rjmp	.+194    	; 0x122 <__vector_24+0x2a>
+  60:	60 c0       	rjmp	.+192    	; 0x122 <__vector_24+0x2a>
+  62:	5f c0       	rjmp	.+190    	; 0x122 <__vector_24+0x2a>
+  64:	5e c0       	rjmp	.+188    	; 0x122 <__vector_24+0x2a>
+  66:	5d c0       	rjmp	.+186    	; 0x122 <__vector_24+0x2a>
+  68:	5c c0       	rjmp	.+184    	; 0x122 <__vector_24+0x2a>
+  6a:	5b c0       	rjmp	.+182    	; 0x122 <__vector_24+0x2a>
+  6c:	5a c0       	rjmp	.+180    	; 0x122 <__vector_24+0x2a>
+  6e:	59 c0       	rjmp	.+178    	; 0x122 <__vector_24+0x2a>
+  70:	58 c0       	rjmp	.+176    	; 0x122 <__vector_24+0x2a>
+  72:	57 c0       	rjmp	.+174    	; 0x122 <__vector_24+0x2a>
+  74:	86 c0       	rjmp	.+268    	; 0x182 <__vector_24+0x8a>
+  76:	55 c0       	rjmp	.+170    	; 0x122 <__vector_24+0x2a>
+  78:	54 c0       	rjmp	.+168    	; 0x122 <__vector_24+0x2a>
+  7a:	53 c0       	rjmp	.+166    	; 0x122 <__vector_24+0x2a>
+  7c:	52 c0       	rjmp	.+164    	; 0x122 <__vector_24+0x2a>
+  7e:	51 c0       	rjmp	.+162    	; 0x122 <__vector_24+0x2a>
+  80:	50 c0       	rjmp	.+160    	; 0x122 <__vector_24+0x2a>
+  82:	4f c0       	rjmp	.+158    	; 0x122 <__vector_24+0x2a>
+  84:	4e c0       	rjmp	.+156    	; 0x122 <__vector_24+0x2a>
+  86:	4d c0       	rjmp	.+154    	; 0x122 <__vector_24+0x2a>
+  88:	4c c0       	rjmp	.+152    	; 0x122 <__vector_24+0x2a>
+  8a:	4b c0       	rjmp	.+150    	; 0x122 <__vector_24+0x2a>
+  8c:	4a c0       	rjmp	.+148    	; 0x122 <__vector_24+0x2a>
+  8e:	49 c0       	rjmp	.+146    	; 0x122 <__vector_24+0x2a>
+  90:	48 c0       	rjmp	.+144    	; 0x122 <__vector_24+0x2a>
+  92:	47 c0       	rjmp	.+142    	; 0x122 <__vector_24+0x2a>
+  94:	8d c0       	rjmp	.+282    	; 0x1b0 <__vector_24+0xb8>
+  96:	45 c0       	rjmp	.+138    	; 0x122 <__vector_24+0x2a>
+  98:	44 c0       	rjmp	.+136    	; 0x122 <__vector_24+0x2a>
+  9a:	43 c0       	rjmp	.+134    	; 0x122 <__vector_24+0x2a>
+  9c:	42 c0       	rjmp	.+132    	; 0x122 <__vector_24+0x2a>
+  9e:	41 c0       	rjmp	.+130    	; 0x122 <__vector_24+0x2a>
+  a0:	40 c0       	rjmp	.+128    	; 0x122 <__vector_24+0x2a>
+  a2:	3f c0       	rjmp	.+126    	; 0x122 <__vector_24+0x2a>
+  a4:	89 c0       	rjmp	.+274    	; 0x1b8 <__vector_24+0xc0>
+  a6:	3d c0       	rjmp	.+122    	; 0x122 <__vector_24+0x2a>
+  a8:	3c c0       	rjmp	.+120    	; 0x122 <__vector_24+0x2a>
+  aa:	3b c0       	rjmp	.+118    	; 0x122 <__vector_24+0x2a>
+  ac:	3a c0       	rjmp	.+116    	; 0x122 <__vector_24+0x2a>
+  ae:	39 c0       	rjmp	.+114    	; 0x122 <__vector_24+0x2a>
+  b0:	38 c0       	rjmp	.+112    	; 0x122 <__vector_24+0x2a>
+  b2:	37 c0       	rjmp	.+110    	; 0x122 <__vector_24+0x2a>
+  b4:	36 c0       	rjmp	.+108    	; 0x122 <__vector_24+0x2a>
+  b6:	35 c0       	rjmp	.+106    	; 0x122 <__vector_24+0x2a>
+  b8:	34 c0       	rjmp	.+104    	; 0x122 <__vector_24+0x2a>
+  ba:	33 c0       	rjmp	.+102    	; 0x122 <__vector_24+0x2a>
+  bc:	32 c0       	rjmp	.+100    	; 0x122 <__vector_24+0x2a>
+  be:	31 c0       	rjmp	.+98     	; 0x122 <__vector_24+0x2a>
+  c0:	30 c0       	rjmp	.+96     	; 0x122 <__vector_24+0x2a>
+  c2:	2f c0       	rjmp	.+94     	; 0x122 <__vector_24+0x2a>
+  c4:	87 c0       	rjmp	.+270    	; 0x1d4 <__vector_24+0xdc>
+  c6:	2d c0       	rjmp	.+90     	; 0x122 <__vector_24+0x2a>
+  c8:	2c c0       	rjmp	.+88     	; 0x122 <__vector_24+0x2a>
+  ca:	2b c0       	rjmp	.+86     	; 0x122 <__vector_24+0x2a>
+  cc:	2a c0       	rjmp	.+84     	; 0x122 <__vector_24+0x2a>
+  ce:	29 c0       	rjmp	.+82     	; 0x122 <__vector_24+0x2a>
+  d0:	28 c0       	rjmp	.+80     	; 0x122 <__vector_24+0x2a>
+  d2:	27 c0       	rjmp	.+78     	; 0x122 <__vector_24+0x2a>
+  d4:	3d c0       	rjmp	.+122    	; 0x150 <__vector_24+0x58>
+
+000000d6 <__ctors_end>:
+  d6:	11 24       	eor	r1, r1
+  d8:	1f be       	out	0x3f, r1	; 63
+  da:	cf ef       	ldi	r28, 0xFF	; 255
+  dc:	d2 e0       	ldi	r29, 0x02	; 2
+  de:	de bf       	out	0x3e, r29	; 62
+  e0:	cd bf       	out	0x3d, r28	; 61
+
+000000e2 <__do_clear_bss>:
+  e2:	21 e0       	ldi	r18, 0x01	; 1
+  e4:	a0 e0       	ldi	r26, 0x00	; 0
+  e6:	b1 e0       	ldi	r27, 0x01	; 1
+  e8:	01 c0       	rjmp	.+2      	; 0xec <.do_clear_bss_start>
+
+000000ea <.do_clear_bss_loop>:
+  ea:	1d 92       	st	X+, r1
+
+000000ec <.do_clear_bss_start>:
+  ec:	a3 37       	cpi	r26, 0x73	; 115
+  ee:	b2 07       	cpc	r27, r18
+  f0:	e1 f7       	brne	.-8      	; 0xea <.do_clear_bss_loop>
+  f2:	79 d1       	rcall	.+754    	; 0x3e6 <main>
+  f4:	d3 c1       	rjmp	.+934    	; 0x49c <_exit>
+
+000000f6 <__bad_interrupt>:
+  f6:	84 cf       	rjmp	.-248    	; 0x0 <__vectors>
+
+000000f8 <__vector_24>:
+
+//****************************************************************************
+//This is the TWI ISR. Different actions are taken depending upon the value
+//of the TWI status register TWSR.
+//****************************************************************************/
+ISR(TWI_vect){
+  f8:	1f 92       	push	r1
+  fa:	0f 92       	push	r0
+  fc:	0f b6       	in	r0, 0x3f	; 63
+  fe:	0f 92       	push	r0
+ 100:	11 24       	eor	r1, r1
+ 102:	2f 93       	push	r18
+ 104:	3f 93       	push	r19
+ 106:	8f 93       	push	r24
+ 108:	9f 93       	push	r25
+ 10a:	af 93       	push	r26
+ 10c:	bf 93       	push	r27
+ 10e:	ef 93       	push	r30
+ 110:	ff 93       	push	r31
+  static uint8_t twi_buf_ptr;  //index into the buffer being used 
+
+  switch (TWSR) {
+ 112:	80 91 b9 00 	lds	r24, 0x00B9
+ 116:	90 e0       	ldi	r25, 0x00	; 0
+ 118:	fc 01       	movw	r30, r24
+ 11a:	38 97       	sbiw	r30, 0x08	; 8
+ 11c:	e1 35       	cpi	r30, 0x51	; 81
+ 11e:	f1 05       	cpc	r31, r1
+ 120:	a0 f0       	brcs	.+40     	; 0x14a <__vector_24+0x52>
+      break;      
+    case TW_MT_ARB_LOST:                //Arbitration lost 
+      TWCR = TWCR_START;                //initiate RESTART 
+      break;
+    default:                            //Error occured, save TWSR 
+      twi_state = TWSR;         
+ 122:	80 91 b9 00 	lds	r24, 0x00B9
+ 126:	80 93 2b 01 	sts	0x012B, r24
+      TWCR = TWCR_RST;                  //Reset TWI, disable interupts 
+ 12a:	84 e0       	ldi	r24, 0x04	; 4
+ 12c:	80 93 bc 00 	sts	0x00BC, r24
+  }//switch
+}//TWI_isr
+ 130:	ff 91       	pop	r31
+ 132:	ef 91       	pop	r30
+ 134:	bf 91       	pop	r27
+ 136:	af 91       	pop	r26
+ 138:	9f 91       	pop	r25
+ 13a:	8f 91       	pop	r24
+ 13c:	3f 91       	pop	r19
+ 13e:	2f 91       	pop	r18
+ 140:	0f 90       	pop	r0
+ 142:	0f be       	out	0x3f, r0	; 63
+ 144:	0f 90       	pop	r0
+ 146:	1f 90       	pop	r1
+ 148:	18 95       	reti
+//of the TWI status register TWSR.
+//****************************************************************************/
+ISR(TWI_vect){
+  static uint8_t twi_buf_ptr;  //index into the buffer being used 
+
+  switch (TWSR) {
+ 14a:	e6 5e       	subi	r30, 0xE6	; 230
+ 14c:	ff 4f       	sbci	r31, 0xFF	; 255
+ 14e:	09 94       	ijmp
+    case TW_MR_SLA_ACK:                 //SLA+R xmitted and ACK rcvd
+      if (twi_buf_ptr < (twi_msg_size-1)){TWCR = TWCR_RACK;}  //ACK each byte
+      else                               {TWCR = TWCR_RNACK;} //NACK last byte 
+      break; 
+    case TW_MR_DATA_NACK: //Data byte was rcvd and NACK xmitted
+      twi_buf[twi_buf_ptr] = TWDR;      //save last byte to buffer
+ 150:	80 91 01 01 	lds	r24, 0x0101
+ 154:	e0 91 2c 01 	lds	r30, 0x012C
+ 158:	f0 91 2d 01 	lds	r31, 0x012D
+ 15c:	e8 0f       	add	r30, r24
+ 15e:	f1 1d       	adc	r31, r1
+ 160:	80 91 bb 00 	lds	r24, 0x00BB
+ 164:	80 83       	st	Z, r24
+      TWCR = TWCR_STOP;                 //initiate a STOP
+ 166:	84 e9       	ldi	r24, 0x94	; 148
+ 168:	80 93 bc 00 	sts	0x00BC, r24
+      break;      
+ 16c:	e1 cf       	rjmp	.-62     	; 0x130 <__vector_24+0x38>
+  static uint8_t twi_buf_ptr;  //index into the buffer being used 
+
+  switch (TWSR) {
+    case TW_START:          //START has been xmitted, fall thorough
+    case TW_REP_START:      //Repeated START was xmitted
+      TWDR = twi_bus_addr;  //load up the twi bus address
+ 16e:	80 91 32 01 	lds	r24, 0x0132
+ 172:	80 93 bb 00 	sts	0x00BB, r24
+      twi_buf_ptr = 0;      //initalize buffer pointer 
+ 176:	10 92 01 01 	sts	0x0101, r1
+      TWCR = TWCR_SEND;     //send SLA+RW
+ 17a:	85 e8       	ldi	r24, 0x85	; 133
+ 17c:	80 93 bc 00 	sts	0x00BC, r24
+      break;
+ 180:	d7 cf       	rjmp	.-82     	; 0x130 <__vector_24+0x38>
+    case TW_MT_SLA_ACK:     //SLA+W was xmitted and ACK rcvd, fall through 
+    case TW_MT_DATA_ACK:                //Data byte was xmitted and ACK rcvd
+      if (twi_buf_ptr < twi_msg_size){  //send data till done
+ 182:	80 91 01 01 	lds	r24, 0x0101
+ 186:	90 91 37 01 	lds	r25, 0x0137
+ 18a:	89 17       	cp	r24, r25
+ 18c:	60 f7       	brcc	.-40     	; 0x166 <__vector_24+0x6e>
+        TWDR = twi_buf[twi_buf_ptr++];  //load next and postincrement index
+ 18e:	e0 91 2c 01 	lds	r30, 0x012C
+ 192:	f0 91 2d 01 	lds	r31, 0x012D
+ 196:	91 e0       	ldi	r25, 0x01	; 1
+ 198:	98 0f       	add	r25, r24
+ 19a:	90 93 01 01 	sts	0x0101, r25
+ 19e:	e8 0f       	add	r30, r24
+ 1a0:	f1 1d       	adc	r31, r1
+ 1a2:	80 81       	ld	r24, Z
+ 1a4:	80 93 bb 00 	sts	0x00BB, r24
+        TWCR = TWCR_SEND;               //send next byte 
+ 1a8:	85 e8       	ldi	r24, 0x85	; 133
+ 1aa:	80 93 bc 00 	sts	0x00BC, r24
+ 1ae:	c0 cf       	rjmp	.-128    	; 0x130 <__vector_24+0x38>
+    case TW_MR_DATA_NACK: //Data byte was rcvd and NACK xmitted
+      twi_buf[twi_buf_ptr] = TWDR;      //save last byte to buffer
+      TWCR = TWCR_STOP;                 //initiate a STOP
+      break;      
+    case TW_MT_ARB_LOST:                //Arbitration lost 
+      TWCR = TWCR_START;                //initiate RESTART 
+ 1b0:	85 ea       	ldi	r24, 0xA5	; 165
+ 1b2:	80 93 bc 00 	sts	0x00BC, r24
+      break;
+ 1b6:	bc cf       	rjmp	.-136    	; 0x130 <__vector_24+0x38>
+ 1b8:	20 91 01 01 	lds	r18, 0x0101
+      else{TWCR = TWCR_STOP;}           //last byte sent, send STOP 
+      break;
+    case TW_MR_DATA_ACK:                //Data byte has been rcvd, ACK xmitted, fall through
+      twi_buf[twi_buf_ptr++] = TWDR;    //fill buffer with rcvd data
+    case TW_MR_SLA_ACK:                 //SLA+R xmitted and ACK rcvd
+      if (twi_buf_ptr < (twi_msg_size-1)){TWCR = TWCR_RACK;}  //ACK each byte
+ 1bc:	80 91 37 01 	lds	r24, 0x0137
+ 1c0:	30 e0       	ldi	r19, 0x00	; 0
+ 1c2:	90 e0       	ldi	r25, 0x00	; 0
+ 1c4:	01 97       	sbiw	r24, 0x01	; 1
+ 1c6:	28 17       	cp	r18, r24
+ 1c8:	39 07       	cpc	r19, r25
+ 1ca:	dc f4       	brge	.+54     	; 0x202 <__vector_24+0x10a>
+ 1cc:	85 ec       	ldi	r24, 0xC5	; 197
+ 1ce:	80 93 bc 00 	sts	0x00BC, r24
+ 1d2:	ae cf       	rjmp	.-164    	; 0x130 <__vector_24+0x38>
+        TWCR = TWCR_SEND;               //send next byte 
+      }
+      else{TWCR = TWCR_STOP;}           //last byte sent, send STOP 
+      break;
+    case TW_MR_DATA_ACK:                //Data byte has been rcvd, ACK xmitted, fall through
+      twi_buf[twi_buf_ptr++] = TWDR;    //fill buffer with rcvd data
+ 1d4:	e0 91 2c 01 	lds	r30, 0x012C
+ 1d8:	f0 91 2d 01 	lds	r31, 0x012D
+ 1dc:	80 91 01 01 	lds	r24, 0x0101
+ 1e0:	21 e0       	ldi	r18, 0x01	; 1
+ 1e2:	28 0f       	add	r18, r24
+ 1e4:	20 93 01 01 	sts	0x0101, r18
+ 1e8:	e8 0f       	add	r30, r24
+ 1ea:	f1 1d       	adc	r31, r1
+ 1ec:	80 91 bb 00 	lds	r24, 0x00BB
+ 1f0:	80 83       	st	Z, r24
+    case TW_MR_SLA_ACK:                 //SLA+R xmitted and ACK rcvd
+      if (twi_buf_ptr < (twi_msg_size-1)){TWCR = TWCR_RACK;}  //ACK each byte
+ 1f2:	80 91 37 01 	lds	r24, 0x0137
+ 1f6:	30 e0       	ldi	r19, 0x00	; 0
+ 1f8:	90 e0       	ldi	r25, 0x00	; 0
+ 1fa:	01 97       	sbiw	r24, 0x01	; 1
+ 1fc:	28 17       	cp	r18, r24
+ 1fe:	39 07       	cpc	r19, r25
+ 200:	2c f3       	brlt	.-54     	; 0x1cc <__vector_24+0xd4>
+      else                               {TWCR = TWCR_RNACK;} //NACK last byte 
+ 202:	85 e8       	ldi	r24, 0x85	; 133
+ 204:	80 93 bc 00 	sts	0x00BC, r24
+ 208:	93 cf       	rjmp	.-218    	; 0x130 <__vector_24+0x38>
+
+0000020a <twi_busy>:
+//Call this function to test if the TWI unit is busy transferring data. The TWI
+//code uses the the interrupt enable bit (TWIE) to indicate if the TWI unit
+//is busy or not.  This protocol must be maintained for correct operation.
+//*****************************************************************************
+uint8_t twi_busy(void){
+  return (bit_is_set(TWCR,TWIE)); //if interrupt is enabled, twi is busy
+ 20a:	80 91 bc 00 	lds	r24, 0x00BC
+}
+ 20e:	81 70       	andi	r24, 0x01	; 1
+ 210:	08 95       	ret
+
+00000212 <twi_start_wr>:
+//Call this function to test if the TWI unit is busy transferring data. The TWI
+//code uses the the interrupt enable bit (TWIE) to indicate if the TWI unit
+//is busy or not.  This protocol must be maintained for correct operation.
+//*****************************************************************************
+uint8_t twi_busy(void){
+  return (bit_is_set(TWCR,TWIE)); //if interrupt is enabled, twi is busy
+ 212:	90 91 bc 00 	lds	r25, 0x00BC
+//Initiates a write transfer. Loads global variables. Sends START. ISR handles
+//the rest.
+//****************************************************************************
+void twi_start_wr(uint8_t twi_addr, uint8_t *twi_data, uint8_t byte_cnt){
+
+  while(twi_busy());                    //wait till TWI rdy for next xfer
+ 216:	90 fd       	sbrc	r25, 0
+ 218:	fc cf       	rjmp	.-8      	; 0x212 <twi_start_wr>
+  twi_bus_addr = (twi_addr & ~TW_READ); //set twi bus address, mark as write 
+ 21a:	8e 7f       	andi	r24, 0xFE	; 254
+ 21c:	80 93 32 01 	sts	0x0132, r24
+  twi_buf = twi_data;                   //load pointer to write buffer
+ 220:	70 93 2d 01 	sts	0x012D, r23
+ 224:	60 93 2c 01 	sts	0x012C, r22
+  twi_msg_size = byte_cnt;              //load size of xfer 
+ 228:	40 93 37 01 	sts	0x0137, r20
+  TWCR = TWCR_START;                    //initiate START
+ 22c:	85 ea       	ldi	r24, 0xA5	; 165
+ 22e:	80 93 bc 00 	sts	0x00BC, r24
+ 232:	08 95       	ret
+
+00000234 <twi_start_rd>:
+//Call this function to test if the TWI unit is busy transferring data. The TWI
+//code uses the the interrupt enable bit (TWIE) to indicate if the TWI unit
+//is busy or not.  This protocol must be maintained for correct operation.
+//*****************************************************************************
+uint8_t twi_busy(void){
+  return (bit_is_set(TWCR,TWIE)); //if interrupt is enabled, twi is busy
+ 234:	90 91 bc 00 	lds	r25, 0x00BC
+//Initiates a read transfer. Loads global variables. Sends START. ISR handles
+//the rest.
+//****************************************************************************
+void twi_start_rd(uint8_t twi_addr, uint8_t *twi_data, uint8_t byte_cnt){
+
+  while(twi_busy());                   //wait till TWI rdy for next xfer
+ 238:	90 fd       	sbrc	r25, 0
+ 23a:	fc cf       	rjmp	.-8      	; 0x234 <twi_start_rd>
+  twi_bus_addr = (twi_addr | TW_READ); //set twi bus address, mark as read  
+ 23c:	81 60       	ori	r24, 0x01	; 1
+ 23e:	80 93 32 01 	sts	0x0132, r24
+  twi_buf = twi_data;                  //load pointer to write buffer
+ 242:	70 93 2d 01 	sts	0x012D, r23
+ 246:	60 93 2c 01 	sts	0x012C, r22
+  twi_msg_size = byte_cnt;             //load size of xfer 
+ 24a:	40 93 37 01 	sts	0x0137, r20
+  TWCR = TWCR_START;                   //initiate START
+ 24e:	85 ea       	ldi	r24, 0xA5	; 165
+ 250:	80 93 bc 00 	sts	0x00BC, r24
+ 254:	08 95       	ret
+
+00000256 <init_twi>:
+//10K pullups are present on the board
+//For the alarm clock, an additional 4.7K resistor is also there for pullup
+//******************************************************************************
+
+void init_twi(){
+  TWDR = 0xFF;     //release SDA, default contents
+ 256:	8f ef       	ldi	r24, 0xFF	; 255
+ 258:	80 93 bb 00 	sts	0x00BB, r24
+  TWSR = 0x00;     //prescaler value = 1
+ 25c:	10 92 b9 00 	sts	0x00B9, r1
+  TWBR = TWI_TWBR; //defined in twi_master.h 
+ 260:	8c e0       	ldi	r24, 0x0C	; 12
+ 262:	80 93 b8 00 	sts	0x00B8, r24
+ 266:	08 95       	ret
+
+00000268 <uart_putc>:
+//                        uart_putc
+//
+// Takes a character and sends it to USART0
+//
+void uart_putc(char data) {
+    while (!(UCSR0A&(1<<UDRE0)));    // Wait for previous transmissions
+ 268:	90 91 c0 00 	lds	r25, 0x00C0
+ 26c:	95 ff       	sbrs	r25, 5
+ 26e:	fc cf       	rjmp	.-8      	; 0x268 <uart_putc>
+    UDR0 = data;    // Send data byte
+ 270:	80 93 c6 00 	sts	0x00C6, r24
+    while (!(UCSR0A&(1<<UDRE0)));    // Wait for previous transmissions
+ 274:	80 91 c0 00 	lds	r24, 0x00C0
+ 278:	85 ff       	sbrs	r24, 5
+ 27a:	fc cf       	rjmp	.-8      	; 0x274 <uart_putc+0xc>
+}
+ 27c:	08 95       	ret
+
+0000027e <uart_puts>:
+// Takes a string and sends each charater to be sent to USART0
+//void uart_puts(unsigned char *str) {
+void uart_puts(char *str) {
+    int i = 0;
+    // Loop through string, sending each character
+    while(str[i] != '\0') {
+ 27e:	fc 01       	movw	r30, r24
+ 280:	20 81       	ld	r18, Z
+ 282:	22 23       	and	r18, r18
+ 284:	71 f0       	breq	.+28     	; 0x2a2 <uart_puts+0x24>
+ 286:	31 96       	adiw	r30, 0x01	; 1
+//                        uart_putc
+//
+// Takes a character and sends it to USART0
+//
+void uart_putc(char data) {
+    while (!(UCSR0A&(1<<UDRE0)));    // Wait for previous transmissions
+ 288:	80 91 c0 00 	lds	r24, 0x00C0
+ 28c:	85 ff       	sbrs	r24, 5
+ 28e:	fc cf       	rjmp	.-8      	; 0x288 <uart_puts+0xa>
+    UDR0 = data;    // Send data byte
+ 290:	20 93 c6 00 	sts	0x00C6, r18
+    while (!(UCSR0A&(1<<UDRE0)));    // Wait for previous transmissions
+ 294:	80 91 c0 00 	lds	r24, 0x00C0
+ 298:	85 ff       	sbrs	r24, 5
+ 29a:	fc cf       	rjmp	.-8      	; 0x294 <uart_puts+0x16>
+// Takes a string and sends each charater to be sent to USART0
+//void uart_puts(unsigned char *str) {
+void uart_puts(char *str) {
+    int i = 0;
+    // Loop through string, sending each character
+    while(str[i] != '\0') {
+ 29c:	21 91       	ld	r18, Z+
+ 29e:	21 11       	cpse	r18, r1
+ 2a0:	f3 cf       	rjmp	.-26     	; 0x288 <uart_puts+0xa>
+ 2a2:	08 95       	ret
+
+000002a4 <uart_puts_p>:
+//                        uart_puts_p
+// Takes a string in flash memory and sends each charater to USART0
+//void uart_puts(unsigned char *str) {
+void uart_puts_p(const char *str) {
+    // Loop through string, sending each character
+    while(pgm_read_byte(str) != 0x00) {
+ 2a4:	9c 01       	movw	r18, r24
+ 2a6:	fc 01       	movw	r30, r24
+ 2a8:	44 91       	lpm	r20, Z
+ 2aa:	44 23       	and	r20, r20
+ 2ac:	91 f0       	breq	.+36     	; 0x2d2 <uart_puts_p+0x2e>
+        uart_putc(pgm_read_byte(str++));
+ 2ae:	01 96       	adiw	r24, 0x01	; 1
+ 2b0:	f9 01       	movw	r30, r18
+ 2b2:	24 91       	lpm	r18, Z
+//                        uart_putc
+//
+// Takes a character and sends it to USART0
+//
+void uart_putc(char data) {
+    while (!(UCSR0A&(1<<UDRE0)));    // Wait for previous transmissions
+ 2b4:	30 91 c0 00 	lds	r19, 0x00C0
+ 2b8:	35 ff       	sbrs	r19, 5
+ 2ba:	fc cf       	rjmp	.-8      	; 0x2b4 <uart_puts_p+0x10>
+    UDR0 = data;    // Send data byte
+ 2bc:	20 93 c6 00 	sts	0x00C6, r18
+    while (!(UCSR0A&(1<<UDRE0)));    // Wait for previous transmissions
+ 2c0:	20 91 c0 00 	lds	r18, 0x00C0
+ 2c4:	25 ff       	sbrs	r18, 5
+ 2c6:	fc cf       	rjmp	.-8      	; 0x2c0 <uart_puts_p+0x1c>
+//                        uart_puts_p
+// Takes a string in flash memory and sends each charater to USART0
+//void uart_puts(unsigned char *str) {
+void uart_puts_p(const char *str) {
+    // Loop through string, sending each character
+    while(pgm_read_byte(str) != 0x00) {
+ 2c8:	9c 01       	movw	r18, r24
+ 2ca:	fc 01       	movw	r30, r24
+ 2cc:	44 91       	lpm	r20, Z
+ 2ce:	41 11       	cpse	r20, r1
+ 2d0:	ee cf       	rjmp	.-36     	; 0x2ae <uart_puts_p+0xa>
+        uart_putc(pgm_read_byte(str++));
+    }
+}
+ 2d2:	08 95       	ret
+
+000002d4 <uart_init>:
+//RXD is PORT D bit 0
+//TXD is PORT D bit 1
+
+void uart_init(){
+    //rx and tx enable, receive interrupt enabled, 8 bit characters
+    UCSR0B |= (1<<RXEN0) | (1<<TXEN0) | (1<<RXCIE0); //INTERRUPTS ENABLED
+ 2d4:	e1 ec       	ldi	r30, 0xC1	; 193
+ 2d6:	f0 e0       	ldi	r31, 0x00	; 0
+ 2d8:	80 81       	ld	r24, Z
+ 2da:	88 69       	ori	r24, 0x98	; 152
+ 2dc:	80 83       	st	Z, r24
+    //UCSR0B |= (1<<RXEN0) | (1<<TXEN0);               //INTERRUPS DISABLED
+    
+    //async operation, no parity,  one stop bit, 8-bit characters
+    UCSR0C |= (1<<UCSZ01) | (1<<UCSZ00);
+ 2de:	e2 ec       	ldi	r30, 0xC2	; 194
+ 2e0:	f0 e0       	ldi	r31, 0x00	; 0
+ 2e2:	80 81       	ld	r24, Z
+ 2e4:	86 60       	ori	r24, 0x06	; 6
+ 2e6:	80 83       	st	Z, r24
+    UBRR0H = (BAUDVALUE >>8 ); //load upper byte of the baud rate into UBRR
+ 2e8:	10 92 c5 00 	sts	0x00C5, r1
+    UBRR0L =  BAUDVALUE;       //load lower byte of the baud rate into UBRR
+ 2ec:	83 e3       	ldi	r24, 0x33	; 51
+ 2ee:	80 93 c4 00 	sts	0x00C4, r24
+ 2f2:	08 95       	ret
+
+000002f4 <uart_getc>:
+//Modified to not block indefinately in the case of a lost byte
+//
+char uart_getc(void) {
+    uint16_t timer = 0;
+    
+    while (!(UCSR0A & (1<<RXC0))) {
+ 2f4:	80 e8       	ldi	r24, 0x80	; 128
+ 2f6:	9e e3       	ldi	r25, 0x3E	; 62
+ 2f8:	03 c0       	rjmp	.+6      	; 0x300 <__stack+0x1>
+ 2fa:	01 97       	sbiw	r24, 0x01	; 1
+        timer++;
+        if(timer >= 16000){ return(0);}
+ 2fc:	00 97       	sbiw	r24, 0x00	; 0
+ 2fe:	39 f0       	breq	.+14     	; 0x30e <__stack+0xf>
+//Modified to not block indefinately in the case of a lost byte
+//
+char uart_getc(void) {
+    uint16_t timer = 0;
+    
+    while (!(UCSR0A & (1<<RXC0))) {
+ 300:	20 91 c0 00 	lds	r18, 0x00C0
+ 304:	27 ff       	sbrs	r18, 7
+ 306:	f9 cf       	rjmp	.-14     	; 0x2fa <uart_getc+0x6>
+        //what should we return if nothing comes in?
+        //return the data into a global variable
+        //give uart_getc the address of the variable
+        //return a -1 if no data comes back.
+    } // Wait for byte to arrive
+    return(UDR0); //return the received data
+ 308:	80 91 c6 00 	lds	r24, 0x00C6
+ 30c:	08 95       	ret
+char uart_getc(void) {
+    uint16_t timer = 0;
+    
+    while (!(UCSR0A & (1<<RXC0))) {
+        timer++;
+        if(timer >= 16000){ return(0);}
+ 30e:	80 e0       	ldi	r24, 0x00	; 0
+        //return the data into a global variable
+        //give uart_getc the address of the variable
+        //return a -1 if no data comes back.
+    } // Wait for byte to arrive
+    return(UDR0); //return the received data
+}
+ 310:	08 95       	ret
+
+00000312 <lm73_set_max_resolution>:
+uint8_t lm73_rd_buf[2];
+
+//******************************************************************************
+void lm73_set_max_resolution(void){
+   //FIXME
+   lm73_wr_buf[0] = LM73_PTR_CTRL_STATUS;
+ 312:	84 e0       	ldi	r24, 0x04	; 4
+ 314:	80 93 2e 01 	sts	0x012E, r24
+   //lm73_wr_buf[0] = LM73_PTR_TEMP;   
+   lm73_wr_buf[1] = (1<<RES1 | 1<<RES0);
+ 318:	80 e6       	ldi	r24, 0x60	; 96
+ 31a:	80 93 2f 01 	sts	0x012F, r24
+//Call this function to test if the TWI unit is busy transferring data. The TWI
+//code uses the the interrupt enable bit (TWIE) to indicate if the TWI unit
+//is busy or not.  This protocol must be maintained for correct operation.
+//*****************************************************************************
+uint8_t twi_busy(void){
+  return (bit_is_set(TWCR,TWIE)); //if interrupt is enabled, twi is busy
+ 31e:	80 91 bc 00 	lds	r24, 0x00BC
+//Initiates a write transfer. Loads global variables. Sends START. ISR handles
+//the rest.
+//****************************************************************************
+void twi_start_wr(uint8_t twi_addr, uint8_t *twi_data, uint8_t byte_cnt){
+
+  while(twi_busy());                    //wait till TWI rdy for next xfer
+ 322:	80 fd       	sbrc	r24, 0
+ 324:	fc cf       	rjmp	.-8      	; 0x31e <lm73_set_max_resolution+0xc>
+  twi_bus_addr = (twi_addr & ~TW_READ); //set twi bus address, mark as write 
+ 326:	80 e9       	ldi	r24, 0x90	; 144
+ 328:	80 93 32 01 	sts	0x0132, r24
+  twi_buf = twi_data;                   //load pointer to write buffer
+ 32c:	8e e2       	ldi	r24, 0x2E	; 46
+ 32e:	91 e0       	ldi	r25, 0x01	; 1
+ 330:	90 93 2d 01 	sts	0x012D, r25
+ 334:	80 93 2c 01 	sts	0x012C, r24
+  twi_msg_size = byte_cnt;              //load size of xfer 
+ 338:	82 e0       	ldi	r24, 0x02	; 2
+ 33a:	80 93 37 01 	sts	0x0137, r24
+  TWCR = TWCR_START;                    //initiate START
+ 33e:	85 ea       	ldi	r24, 0xA5	; 165
+ 340:	80 93 bc 00 	sts	0x00BC, r24
+ 344:	08 95       	ret
+
+00000346 <lm73_set_ptr_to_read>:
+//******************************************************************************
+void lm73_set_ptr_to_read(void){
+   //set LM73 mode for reading temperature by loading pointer register
+   //this is done outside of the normal interrupt mode of operation 
+   //load lm73_wr_buf[0] with temperature pointer address
+   lm73_wr_buf[0] = LM73_PTR_TEMP;   
+ 346:	10 92 2e 01 	sts	0x012E, r1
+//Call this function to test if the TWI unit is busy transferring data. The TWI
+//code uses the the interrupt enable bit (TWIE) to indicate if the TWI unit
+//is busy or not.  This protocol must be maintained for correct operation.
+//*****************************************************************************
+uint8_t twi_busy(void){
+  return (bit_is_set(TWCR,TWIE)); //if interrupt is enabled, twi is busy
+ 34a:	80 91 bc 00 	lds	r24, 0x00BC
+//Initiates a write transfer. Loads global variables. Sends START. ISR handles
+//the rest.
+//****************************************************************************
+void twi_start_wr(uint8_t twi_addr, uint8_t *twi_data, uint8_t byte_cnt){
+
+  while(twi_busy());                    //wait till TWI rdy for next xfer
+ 34e:	80 fd       	sbrc	r24, 0
+ 350:	fc cf       	rjmp	.-8      	; 0x34a <lm73_set_ptr_to_read+0x4>
+  twi_bus_addr = (twi_addr & ~TW_READ); //set twi bus address, mark as write 
+ 352:	80 e9       	ldi	r24, 0x90	; 144
+ 354:	80 93 32 01 	sts	0x0132, r24
+  twi_buf = twi_data;                   //load pointer to write buffer
+ 358:	8e e2       	ldi	r24, 0x2E	; 46
+ 35a:	91 e0       	ldi	r25, 0x01	; 1
+ 35c:	90 93 2d 01 	sts	0x012D, r25
+ 360:	80 93 2c 01 	sts	0x012C, r24
+  twi_msg_size = byte_cnt;              //load size of xfer 
+ 364:	81 e0       	ldi	r24, 0x01	; 1
+ 366:	80 93 37 01 	sts	0x0137, r24
+  TWCR = TWCR_START;                    //initiate START
+ 36a:	85 ea       	ldi	r24, 0xA5	; 165
+ 36c:	80 93 bc 00 	sts	0x00BC, r24
+ 370:	08 95       	ret
+
+00000372 <lm73_temp_convert>:
+   //TODO:Returns what???(uint8_t)??? Probably a BUG?
+
+   //Yeah, this is for you to do! ;^)
+
+  return 0;
+}//lm73_temp_convert
+ 372:	80 e0       	ldi	r24, 0x00	; 0
+ 374:	08 95       	ret
+
+00000376 <spi_init>:
+uint8_t           send_seq=0;         //transmit sequence number
+char              lcd_string[3];      //holds value of sequence number
+uint16_t          lm73_temp; //a variable to assemble the temperature from the lm73
+
+void spi_init(void){
+    DDRB   = DDRB | 0x07;           //Turn on SS, MOSI, SCLK pins
+ 376:	84 b1       	in	r24, 0x04	; 4
+ 378:	87 60       	ori	r24, 0x07	; 7
+ 37a:	84 b9       	out	0x04, r24	; 4
+    SPCR  |= (1<<SPE) | (1<<MSTR);  //set up SPI mode
+ 37c:	8c b5       	in	r24, 0x2c	; 44
+ 37e:	80 65       	ori	r24, 0x50	; 80
+ 380:	8c bd       	out	0x2c, r24	; 44
+    SPSR  |= (1<<SPI2X);            //run at double speed
+ 382:	8d b5       	in	r24, 0x2d	; 45
+ 384:	81 60       	ori	r24, 0x01	; 1
+ 386:	8d bd       	out	0x2d, r24	; 45
+ 388:	08 95       	ret
+
+0000038a <readTemperature>:
+//Call this function to test if the TWI unit is busy transferring data. The TWI
+//code uses the the interrupt enable bit (TWIE) to indicate if the TWI unit
+//is busy or not.  This protocol must be maintained for correct operation.
+//*****************************************************************************
+uint8_t twi_busy(void){
+  return (bit_is_set(TWCR,TWIE)); //if interrupt is enabled, twi is busy
+ 38a:	80 91 bc 00 	lds	r24, 0x00BC
+//Initiates a read transfer. Loads global variables. Sends START. ISR handles
+//the rest.
+//****************************************************************************
+void twi_start_rd(uint8_t twi_addr, uint8_t *twi_data, uint8_t byte_cnt){
+
+  while(twi_busy());                   //wait till TWI rdy for next xfer
+ 38e:	80 fd       	sbrc	r24, 0
+ 390:	fc cf       	rjmp	.-8      	; 0x38a <readTemperature>
+  twi_bus_addr = (twi_addr | TW_READ); //set twi bus address, mark as read  
+ 392:	81 e9       	ldi	r24, 0x91	; 145
+ 394:	80 93 32 01 	sts	0x0132, r24
+  twi_buf = twi_data;                  //load pointer to write buffer
+ 398:	88 e4       	ldi	r24, 0x48	; 72
+ 39a:	91 e0       	ldi	r25, 0x01	; 1
+ 39c:	90 93 2d 01 	sts	0x012D, r25
+ 3a0:	80 93 2c 01 	sts	0x012C, r24
+  twi_msg_size = byte_cnt;             //load size of xfer 
+ 3a4:	82 e0       	ldi	r24, 0x02	; 2
+ 3a6:	80 93 37 01 	sts	0x0137, r24
+  TWCR = TWCR_START;                   //initiate START
+ 3aa:	85 ea       	ldi	r24, 0xA5	; 165
+ 3ac:	80 93 bc 00 	sts	0x00BC, r24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 3b0:	8f e9       	ldi	r24, 0x9F	; 159
+ 3b2:	9f e0       	ldi	r25, 0x0F	; 15
+ 3b4:	01 97       	sbiw	r24, 0x01	; 1
+ 3b6:	f1 f7       	brne	.-4      	; 0x3b4 <readTemperature+0x2a>
+ 3b8:	00 c0       	rjmp	.+0      	; 0x3ba <readTemperature+0x30>
+ 3ba:	00 00       	nop
+
+    twi_start_rd(LM73_ADDRESS, lm73_rd_buf, 2); //read temperature data from LM73 (2 bytes)  (twi_start_rd())
+    _delay_ms(2); //wait for it to finish
+    
+    //now assemble the two bytes read back into one 16-bit value
+    lm73_temp = lm73_rd_buf[0]; //save high temperature byte into lm73_temp
+ 3bc:	80 91 48 01 	lds	r24, 0x0148
+ 3c0:	90 e0       	ldi	r25, 0x00	; 0
+    lm73_temp = lm73_temp << 8; //shift it into upper byte
+ 3c2:	98 2f       	mov	r25, r24
+ 3c4:	88 27       	eor	r24, r24
+    lm73_temp |= lm73_rd_buf[1];//"OR" in the low temp byte to lm73_temp
+ 3c6:	20 91 49 01 	lds	r18, 0x0149
+ 3ca:	82 2b       	or	r24, r18
+    lm73_temp = lm73_temp >> 7; //getting rid of the fractional parts of the number (first 7 bits)
+ 3cc:	88 0f       	add	r24, r24
+ 3ce:	89 2f       	mov	r24, r25
+ 3d0:	88 1f       	adc	r24, r24
+ 3d2:	99 0b       	sbc	r25, r25
+ 3d4:	91 95       	neg	r25
+ 3d6:	90 93 31 01 	sts	0x0131, r25
+ 3da:	80 93 30 01 	sts	0x0130, r24
+    } else if (__radix < 2 || __radix > 36) {
+	*__s = 0;
+	return __s;
+    } else {
+	extern char *__itoa_ncheck (int, char *, unsigned char);
+	return __itoa_ncheck (__val, __s, __radix);
+ 3de:	4a e0       	ldi	r20, 0x0A	; 10
+ 3e0:	68 e3       	ldi	r22, 0x38	; 56
+ 3e2:	71 e0       	ldi	r23, 0x01	; 1
+ 3e4:	28 c0       	rjmp	.+80     	; 0x436 <__itoa_ncheck>
+
+000003e6 <main>:
+//RXD is PORT D bit 0
+//TXD is PORT D bit 1
+
+void uart_init(){
+    //rx and tx enable, receive interrupt enabled, 8 bit characters
+    UCSR0B |= (1<<RXEN0) | (1<<TXEN0) | (1<<RXCIE0); //INTERRUPTS ENABLED
+ 3e6:	80 91 c1 00 	lds	r24, 0x00C1
+ 3ea:	88 69       	ori	r24, 0x98	; 152
+ 3ec:	80 93 c1 00 	sts	0x00C1, r24
+    //UCSR0B |= (1<<RXEN0) | (1<<TXEN0);               //INTERRUPS DISABLED
+    
+    //async operation, no parity,  one stop bit, 8-bit characters
+    UCSR0C |= (1<<UCSZ01) | (1<<UCSZ00);
+ 3f0:	80 91 c2 00 	lds	r24, 0x00C2
+ 3f4:	86 60       	ori	r24, 0x06	; 6
+ 3f6:	80 93 c2 00 	sts	0x00C2, r24
+    UBRR0H = (BAUDVALUE >>8 ); //load upper byte of the baud rate into UBRR
+ 3fa:	10 92 c5 00 	sts	0x00C5, r1
+    UBRR0L =  BAUDVALUE;       //load lower byte of the baud rate into UBRR
+ 3fe:	83 e3       	ldi	r24, 0x33	; 51
+ 400:	80 93 c4 00 	sts	0x00C4, r24
+uint8_t           send_seq=0;         //transmit sequence number
+char              lcd_string[3];      //holds value of sequence number
+uint16_t          lm73_temp; //a variable to assemble the temperature from the lm73
+
+void spi_init(void){
+    DDRB   = DDRB | 0x07;           //Turn on SS, MOSI, SCLK pins
+ 404:	84 b1       	in	r24, 0x04	; 4
+ 406:	87 60       	ori	r24, 0x07	; 7
+ 408:	84 b9       	out	0x04, r24	; 4
+    SPCR  |= (1<<SPE) | (1<<MSTR);  //set up SPI mode
+ 40a:	8c b5       	in	r24, 0x2c	; 44
+ 40c:	80 65       	ori	r24, 0x50	; 80
+ 40e:	8c bd       	out	0x2c, r24	; 44
+    SPSR  |= (1<<SPI2X);            //run at double speed
+ 410:	8d b5       	in	r24, 0x2d	; 45
+ 412:	81 60       	ori	r24, 0x01	; 1
+ 414:	8d bd       	out	0x2d, r24	; 45
+int main(){
+
+    //UART, SPI, and interrupt initializations
+    uart_init();
+    spi_init();
+    sei();
+ 416:	78 94       	sei
+
+    while(1){
+    
+        readTemperature();
+ 418:	b8 df       	rcall	.-144    	; 0x38a <readTemperature>
+        
+        //start TX part
+        uart_puts(lcd_str_array);
+ 41a:	88 e3       	ldi	r24, 0x38	; 56
+ 41c:	91 e0       	ldi	r25, 0x01	; 1
+ 41e:	2f df       	rcall	.-418    	; 0x27e <uart_puts>
+//                        uart_putc
+//
+// Takes a character and sends it to USART0
+//
+void uart_putc(char data) {
+    while (!(UCSR0A&(1<<UDRE0)));    // Wait for previous transmissions
+ 420:	80 91 c0 00 	lds	r24, 0x00C0
+ 424:	85 ff       	sbrs	r24, 5
+ 426:	fc cf       	rjmp	.-8      	; 0x420 <main+0x3a>
+    UDR0 = data;    // Send data byte
+ 428:	10 92 c6 00 	sts	0x00C6, r1
+    while (!(UCSR0A&(1<<UDRE0)));    // Wait for previous transmissions
+ 42c:	80 91 c0 00 	lds	r24, 0x00C0
+ 430:	85 ff       	sbrs	r24, 5
+ 432:	fc cf       	rjmp	.-8      	; 0x42c <main+0x46>
+ 434:	f1 cf       	rjmp	.-30     	; 0x418 <main+0x32>
+
+00000436 <__itoa_ncheck>:
+ 436:	bb 27       	eor	r27, r27
+ 438:	4a 30       	cpi	r20, 0x0A	; 10
+ 43a:	31 f4       	brne	.+12     	; 0x448 <__itoa_ncheck+0x12>
+ 43c:	99 23       	and	r25, r25
+ 43e:	22 f4       	brpl	.+8      	; 0x448 <__itoa_ncheck+0x12>
+ 440:	bd e2       	ldi	r27, 0x2D	; 45
+ 442:	90 95       	com	r25
+ 444:	81 95       	neg	r24
+ 446:	9f 4f       	sbci	r25, 0xFF	; 255
+ 448:	01 c0       	rjmp	.+2      	; 0x44c <__utoa_common>
+
+0000044a <__utoa_ncheck>:
+ 44a:	bb 27       	eor	r27, r27
+
+0000044c <__utoa_common>:
+ 44c:	fb 01       	movw	r30, r22
+ 44e:	55 27       	eor	r21, r21
+ 450:	aa 27       	eor	r26, r26
+ 452:	88 0f       	add	r24, r24
+ 454:	99 1f       	adc	r25, r25
+ 456:	aa 1f       	adc	r26, r26
+ 458:	a4 17       	cp	r26, r20
+ 45a:	10 f0       	brcs	.+4      	; 0x460 <__utoa_common+0x14>
+ 45c:	a4 1b       	sub	r26, r20
+ 45e:	83 95       	inc	r24
+ 460:	50 51       	subi	r21, 0x10	; 16
+ 462:	b9 f7       	brne	.-18     	; 0x452 <__utoa_common+0x6>
+ 464:	a0 5d       	subi	r26, 0xD0	; 208
+ 466:	aa 33       	cpi	r26, 0x3A	; 58
+ 468:	08 f0       	brcs	.+2      	; 0x46c <__utoa_common+0x20>
+ 46a:	a9 5d       	subi	r26, 0xD9	; 217
+ 46c:	a1 93       	st	Z+, r26
+ 46e:	00 97       	sbiw	r24, 0x00	; 0
+ 470:	79 f7       	brne	.-34     	; 0x450 <__utoa_common+0x4>
+ 472:	b1 11       	cpse	r27, r1
+ 474:	b1 93       	st	Z+, r27
+ 476:	11 92       	st	Z+, r1
+ 478:	cb 01       	movw	r24, r22
+ 47a:	00 c0       	rjmp	.+0      	; 0x47c <strrev>
+
+0000047c <strrev>:
+ 47c:	dc 01       	movw	r26, r24
+ 47e:	fc 01       	movw	r30, r24
+ 480:	67 2f       	mov	r22, r23
+ 482:	71 91       	ld	r23, Z+
+ 484:	77 23       	and	r23, r23
+ 486:	e1 f7       	brne	.-8      	; 0x480 <strrev+0x4>
+ 488:	32 97       	sbiw	r30, 0x02	; 2
+ 48a:	04 c0       	rjmp	.+8      	; 0x494 <strrev+0x18>
+ 48c:	7c 91       	ld	r23, X
+ 48e:	6d 93       	st	X+, r22
+ 490:	70 83       	st	Z, r23
+ 492:	62 91       	ld	r22, -Z
+ 494:	ae 17       	cp	r26, r30
+ 496:	bf 07       	cpc	r27, r31
+ 498:	c8 f3       	brcs	.-14     	; 0x48c <strrev+0x10>
+ 49a:	08 95       	ret
+
+0000049c <_exit>:
+ 49c:	f8 94       	cli
+
+0000049e <__stop_program>:
+ 49e:	ff cf       	rjmp	.-2      	; 0x49e <__stop_program>

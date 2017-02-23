@@ -1,0 +1,28 @@
+----------------------------------------------------------------------
+Report for cell DigitalAnalog.<NoName>
+Register bits:  26 of 6864 (0.379%)
+I/O cells:      7
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        11          100.0
+                            FD1S3AX         5          100.0
+                            FD1S3IX        20          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB         3          100.0
+                               LUT4        13          100.0
+                                 OB         4          100.0
+                               OSCH         1          100.0
+SUB MODULES
+                      clock_counter         1
+                              TOTAL        60
+----------------------------------------------------------------------
+Report for cell clock_counter.v1
+Instance Path : slow
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        11          100.0
+                            FD1S3AX         1           20.0
+                            FD1S3IX        20          100.0
+                               LUT4         8           61.5
+                              TOTAL        40

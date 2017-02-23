@@ -1,0 +1,14 @@
+----------------------------------------------------------------------
+Report for cell RemoteControllerSchematic.<NoName>
+Register bits:  0 of 6864 (0.000%)
+I/O cells:      7
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         4          100.0
+                               AND3         2          100.0
+                                GSR         1          100.0
+                                 IB         3          100.0
+                                INV         3          100.0
+                                 OB         4          100.0
+                                OR2         3          100.0
+                              TOTAL        20

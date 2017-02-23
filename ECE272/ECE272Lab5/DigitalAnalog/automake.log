@@ -1,0 +1,383 @@
+
+map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "DigitalAnalog_DigitalAnalog.ngd" -o "DigitalAnalog_DigitalAnalog_map.ncd" -pr "DigitalAnalog_DigitalAnalog.prf" -mp "DigitalAnalog_DigitalAnalog.mrp" "Z:/Windows.Documents/Desktop/ECE272Lab5/DigitalAnalog.lpf" -c 0            
+map:  version Diamond (64-bit) 2.2.0.101
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2013 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: DigitalAnalog_DigitalAnalog.ngd
+   Picdevice="LCMXO2-7000HE"
+
+   Pictype="TQFP144"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-7000HETQFP144, Performance used: 4.
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/2.2_x64/ispfpga.
+Package Status:                     Final          Version 1.36
+
+Running general design DRC...
+Removing unused logic...
+Optimizing...
+
+
+
+Design Summary:
+   Number of registers:    26
+      PFU registers:    26
+      PIO registers:    0
+   Number of SLICEs:            18 out of  3432 (1%)
+      SLICEs(logic/ROM):        18 out of   858 (2%)
+      SLICEs(logic/ROM/RAM):     0 out of  2574 (0%)
+          As RAM:            0 out of  2574 (0%)
+          As Logic/ROM:      0 out of  2574 (0%)
+   Number of logic LUT4s:      14
+   Number of distributed RAM:   0 (0 LUT4s)
+   Number of ripple logic:     11 (22 LUT4s)
+   Number of shift registers:   0
+   Total number of LUT4s:      36
+   Number of PIO sites used: 7 + 4(JTAG) out of 115 (10%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  Yes
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  2
+     Net osc: 12 loads, 12 rising, 0 falling (Driver: osc_int )
+     Net clock2: 4 loads, 4 rising, 0 falling (Driver: slow/clk_o_13 )
+   Number of Clock Enables:  0
+   Number of LSRs:  2
+     Net n59: 1 loads, 1 LSLICEs
+     Net slow/n29: 11 loads, 11 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net slow/n29: 12 loads
+     Net n61: 5 loads
+     Net R_bump_c: 3 loads
+     Net GND_net: 2 loads
+     Net L_bump_c: 2 loads
+     Net n57: 2 loads
+     Net n59: 2 loads
+     Net slow/count_0: 2 loads
+     Net slow/count_19: 2 loads
+     Net slow/count_4: 2 loads
+ 
+   Number of warnings:  0
+   Number of errors:    0
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 59 MB
+
+Dumping design to file DigitalAnalog_DigitalAnalog_map.ncd.
+
+mpartrce -p "DigitalAnalog_DigitalAnalog.p2t" -f "DigitalAnalog_DigitalAnalog.p3t" -tf "DigitalAnalog_DigitalAnalog.pt" "DigitalAnalog_DigitalAnalog_map.ncd" "DigitalAnalog_DigitalAnalog.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "DigitalAnalog_DigitalAnalog_map.ncd"
+Wed May 28 08:35:28 2014
+
+PAR: Place And Route Diamond (64-bit) 2.2.0.101.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF DigitalAnalog_DigitalAnalog_map.ncd DigitalAnalog_DigitalAnalog.dir/5_1.ncd DigitalAnalog_DigitalAnalog.prf
+Preference file: DigitalAnalog_DigitalAnalog.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file DigitalAnalog_DigitalAnalog_map.ncd.
+Design name: DigitalAnalog
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application par from file 'xo2c7000.nph' in environment: C:/lscc/diamond/2.2_x64/ispfpga.
+Package Status:                     Final          Version 1.36
+Performance Hardware Data Status:   Final)         Version 23.4
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)    7+4(JTAG)/336     2% used
+                   7+4(JTAG)/115     6% bonded
+
+   SLICE             18/3432         <1% used
+
+   GSR                1/1           100% used
+   OSC                1/1           100% used
+
+
+Number of Signals: 74
+Number of Connections: 130
+
+Pin Constraint Summary:
+   7 out of 7 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    osc (driver: osc_int, clk load #: 12)
+
+
+The following 1 signal is selected to use the secondary clock routing resources:
+    slow/n29 (driver: slow/SLICE_11, clk load #: 0, sr load #: 11, ce load #: 0)
+
+Signal reset_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+...............
+Placer score = 9035.
+Finished Placer Phase 1.  REAL time: 3 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  9035
+Finished Placer Phase 2.  REAL time: 3 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "osc" from OSC on comp "osc_int" on site "OSC", clk load = 12
+  SECONDARY "slow/n29" from F1 on comp "slow/SLICE_11" on site "R14C20D", clk load = 0, ce load = 0, sr load = 11
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 1 out of 8 (12%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   7 out of 336 (2.1%) PIO sites used.
+   7 out of 115 (6.1%) bonded PIO sites used.
+   Number of PIO comps: 7; differential: 0
+   Number of Vref pins used: 0
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 0 / 28 (  0%) | -          | -         |
+| 1        | 7 / 29 ( 24%) | 2.5V       | -         |
+| 2        | 0 / 29 (  0%) | -          | -         |
+| 3        | 0 / 9 (  0%)  | -          | -         |
+| 4        | 0 / 10 (  0%) | -          | -         |
+| 5        | 0 / 10 (  0%) | -          | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 2 secs 
+
+Dumping design to file DigitalAnalog_DigitalAnalog.dir/5_1.ncd.
+
+0 connections routed; 130 unrouted.
+Starting router resource preassignment
+
+WARNING - par: The following clock signals will be routed by using generic routing resource and may suffer from excessive delay and/or skew.
+   Signal=clock2 loads=5 clock_loads=4
+
+Completed router resource preassignment. Real time: 5 secs 
+
+Start NBR router at 08:35:33 05/28/14
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design. Thanks.                                       
+*****************************************************************
+
+Start NBR special constraint process at 08:35:33 05/28/14
+
+Start NBR section for initial routing
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack: 468.466ns/0.000ns; real time: 5 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack: 468.466ns/0.000ns; real time: 5 secs 
+
+Start NBR section for re-routing
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack: 468.466ns/0.000ns; real time: 5 secs 
+
+Start NBR section for post-routing
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 0 (0.00%)
+  Estimated worst slack : 468.466ns
+  Timing score : 0
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Hold time optimization iteration 0:
+All hold time violations have been successfully corrected in speed grade M
+
+Total CPU time 4 secs 
+Total REAL time: 5 secs 
+Completely routed.
+End of route.  130 routed (100.00%); 0 unrouted.
+Checking DRC ... 
+No errors found.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 0 
+
+Dumping design to file DigitalAnalog_DigitalAnalog.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 468.466
+PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.372
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+
+Total CPU  time to completion: 4 secs 
+Total REAL time to completion: 5 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2013 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+bitgen -f "DigitalAnalog_DigitalAnalog.t2b" -w "DigitalAnalog_DigitalAnalog.ncd" -jedec "DigitalAnalog_DigitalAnalog.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 2.2.0.101
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2013 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file DigitalAnalog_DigitalAnalog.ncd.
+Design name: DigitalAnalog
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application Bitgen from file 'xo2c7000.nph' in environment: C:/lscc/diamond/2.2_x64/ispfpga.
+Package Status:                     Final          Version 1.36
+Performance Hardware Data Status:   Final)         Version 23.4
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from DigitalAnalog_DigitalAnalog.prf...
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status:   Final           Version 1.83
+ 
+Saving bit stream in "DigitalAnalog_DigitalAnalog.jed".
+ 
+===========
+UFM Summary
+===========
+UFM Size:        2046 Pages (128*2046 Bits)
+UFM Utilization: General Purpose Flash Memory
+ 
+Available General Purpose Flash Memory: 2046 Pages (Page 0 to Page 2045)
+Initialized UFM Pages:                     0 Page
+ 

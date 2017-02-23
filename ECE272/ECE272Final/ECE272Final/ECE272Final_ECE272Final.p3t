@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "ECE272Final_ECE272Final.log"
+-o "ECE272Final_ECE272Final.csv"
+-pr "ECE272Final_ECE272Final.prf"

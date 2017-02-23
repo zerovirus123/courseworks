@@ -1,0 +1,38 @@
+----------------------------------------------------------------------
+Report for cell LED_top_module.<NoName>
+Register bits:  24 of 6864 (0.350%)
+I/O cells:      9
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        10          100.0
+                            FD1S3AX         4          100.0
+                            FD1S3AY         1          100.0
+                            FD1S3IX        19          100.0
+                                GSR         1          100.0
+                                 IB         1          100.0
+                               LUT4        11          100.0
+                                 OB         8          100.0
+                               OSCH         1          100.0
+SUB MODULES
+                      clock_counter         1
+                      state_machine         1
+                              TOTAL        58
+----------------------------------------------------------------------
+Report for cell state_machine.v1
+Instance Path : FSM_1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         3           75.0
+                            FD1S3AY         1          100.0
+                               LUT4         3           27.3
+                              TOTAL         7
+----------------------------------------------------------------------
+Report for cell clock_counter.v1
+Instance Path : counter_1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        10          100.0
+                            FD1S3AX         1           25.0
+                            FD1S3IX        19          100.0
+                               LUT4         8           72.7
+                              TOTAL        38

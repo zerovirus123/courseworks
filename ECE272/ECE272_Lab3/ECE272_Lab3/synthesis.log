@@ -1,0 +1,120 @@
+synthesis:  version Diamond (64-bit) 2.2.0.101
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2013 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Apr 23 13:05:40 2014
+
+
+Command Line:  synthesis -f ECE272_Lab3_ECE272_Lab3_lattice.synproj 
+
+-- all messages logged in file synthesis.log
+INFO: Synthesis Options: (LSE-1022)
+INFO: -a option is = MachXO2
+INFO: -s option is = 4
+INFO: -t option is = TQFP144
+INFO: -d option is = LCMXO2-7000HE
+INFO: Using package TQFP144
+INFO: Using performance grade 4
+INFO:                                                           
+INFO: ##########################################################
+INFO: ### Lattice Family : MachXO2A
+INFO: ### Device  : LCMXO2-7000HE
+INFO: ### Package : TQFP144
+INFO: ### Speed   : 4
+INFO: ##########################################################
+INFO:                                                           
+INFO: Optimization Goal = Balanced
+INFO: -top option is not used
+INFO: Target Frequency = 200.000000 MHz
+INFO: Max Fanout = 1000
+INFO: Timing Path count = 3
+INFO: bram Utilization = 100.000000 %
+INFO: dsp usage = TRUE (default)
+INFO: dsp utilization = 100 (default)
+INFO: fsm_encoding_style = auto
+INFO: resolve_mixed_drivers = 0
+INFO: fix_gated_clocks = 1
+INFO: Mux style = Auto
+INFO: Use Carry Chain = TRUE
+INFO: carry_chain_length = 0
+INFO: Use IO Insertion = TRUE
+INFO: Use IO Reg = TRUE
+INFO: Resource Sharing = TRUE
+INFO: Propagate Constants = TRUE
+INFO: Remove Duplicate Registers = TRUE
+INFO: force_gsr = auto
+INFO: ROM style = auto
+INFO: RAM style = auto
+INFO: -comp option is FALSE
+INFO: -syn option is FALSE
+INFO: -p Z:/Windows.Documents/Desktop/ECE272 Lab2 (searchpath added)
+INFO: -p C:/lscc/diamond/2.2_x64/ispfpga/xo2c00/data (searchpath added)
+INFO: -p Z:/Windows.Documents/Desktop/ECE272 Lab2/ECE272_Lab3 (searchpath added)
+INFO: -p Z:/Windows.Documents/Desktop/ECE272 Lab2 (searchpath added)
+INFO: Verilog design file = Z:/Windows.Documents/Desktop/ECE272 Lab2/ECE272_Lab3/lab3_schematic.v
+INFO: Ngd file = ECE272_Lab3_ECE272_Lab3.ngd
+INFO: -sdc option: sdc file input not used
+INFO: -lpf option: output file option is OFF
+INFO: hardtimer checking is enabled (default); -dt option not used
+INFO: -r option is OFF [ Remove LOC Properties is OFF ]
+INFO: The default vhdl library search path is now "C:/lscc/diamond/2.2_x64/cae_library/vhdl_packages/vdbs" (VHDL-1504)
+INFO: * compile design *
+INFO: Compile Design Begin
+z:/windows.documents/desktop/ece272 lab2/ece272_lab3/lab3_schematic.v(3): INFO: compiling module lab3_schematic (VERI-1018)
+C:/lscc/diamond/2.2_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): INFO: compiling module AND2 (VERI-1018)
+C:/lscc/diamond/2.2_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(936): INFO: compiling module OR3 (VERI-1018)
+C:/lscc/diamond/2.2_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(49): INFO: compiling module AND3 (VERI-1018)
+C:/lscc/diamond/2.2_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(943): INFO: compiling module OR4 (VERI-1018)
+C:/lscc/diamond/2.2_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(56): INFO: compiling module AND4 (VERI-1018)
+C:/lscc/diamond/2.2_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(563): INFO: compiling module INV (VERI-1018)
+INFO: Top level module name = lab3_schematic
+
+
+INFO: GSR Instance connected to net: n52 (LSE-1149)
+INFO: GSR will not be inferred since no asynchronous signal was found in netlist (LSE-1148)
+WARNING: No lpf file will be written because -lpf option is not used or set to 0
+INFO: Applying 200.000000 MHz constraint to all clocks (LSE-5000)
+INFO: Results of ngd drc checks are available in lab3_schematic_drc.log
+INFO: All blocks are expanded and NGD expansion is successful
+INFO: Writing ngd file ECE272_Lab3_ECE272_Lab3.ngd
+
+################### Begin Area Report (lab3_schematic)######################
+Number of register bits => 0 of 6864 (0 % )
+AND2 => 1
+AND3 => 10
+AND4 => 14
+GSR => 1
+IB => 4
+INV => 4
+OB => 7
+OR3 => 3
+OR4 => 4
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : D_c, loads : 14
+  Net : N_34, loads : 14
+  Net : B_c, loads : 12
+  Net : N_32, loads : 12
+  Net : C_c, loads : 11
+  Net : A_c, loads : 10
+  Net : N_33, loads : 10
+  Net : N_31, loads : 8
+  Net : seg_a_c, loads : 1
+  Net : seg_b_c, loads : 1
+################### End Clock Report ##################
+
+Peak Memory Usage: 57.941  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.265  secs
+--------------------------------------------------------------

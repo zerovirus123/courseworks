@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "DigitalAnalog_DigitalAnalog.log"
+-o "DigitalAnalog_DigitalAnalog.csv"
+-pr "DigitalAnalog_DigitalAnalog.prf"

@@ -1,0 +1,174 @@
+
+synthesis -f "Verilog_Lab_Verilog_Lab_lattice.synproj"
+synthesis:  version Diamond (64-bit) 2.2.0.101
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2013 Lattice Semiconductor Corporation,  All rights reserved.
+Wed May 07 13:54:45 2014
+
+
+Command Line:  synthesis -f Verilog_Lab_Verilog_Lab_lattice.synproj 
+
+-- all messages logged in file synthesis.log
+INFO: Synthesis Options: (LSE-1022)
+INFO: -a option is = MachXO2
+INFO: -s option is = 4
+INFO: -t option is = TQFP144
+INFO: -d option is = LCMXO2-7000HE
+INFO: Using package TQFP144
+INFO: Using performance grade 4
+INFO:                                                           
+INFO: ##########################################################
+INFO: ### Lattice Family : MachXO2A
+INFO: ### Device  : LCMXO2-7000HE
+INFO: ### Package : TQFP144
+INFO: ### Speed   : 4
+INFO: ##########################################################
+INFO:                                                           
+INFO: Optimization Goal = Balanced
+INFO: -top option is not used
+INFO: Target Frequency = 200.000000 MHz
+INFO: Max Fanout = 1000
+INFO: Timing Path count = 3
+INFO: bram Utilization = 100.000000 %
+INFO: dsp usage = TRUE (default)
+INFO: dsp utilization = 100 (default)
+INFO: fsm_encoding_style = auto
+INFO: resolve_mixed_drivers = 0
+INFO: fix_gated_clocks = 1
+INFO: Mux style = Auto
+INFO: Use Carry Chain = TRUE
+INFO: carry_chain_length = 0
+INFO: Use IO Insertion = TRUE
+INFO: Use IO Reg = TRUE
+INFO: Resource Sharing = TRUE
+INFO: Propagate Constants = TRUE
+INFO: Remove Duplicate Registers = TRUE
+INFO: force_gsr = auto
+INFO: ROM style = auto
+INFO: RAM style = auto
+INFO: -comp option is FALSE
+INFO: -syn option is FALSE
+INFO: -p Z:/Windows.Documents/Desktop/ECE272Lab4 (searchpath added)
+INFO: -p C:/lscc/diamond/2.2_x64/ispfpga/xo2c00/data (searchpath added)
+INFO: -p Z:/Windows.Documents/Desktop/ECE272Lab4/Verilog_Lab (searchpath added)
+INFO: -p Z:/Windows.Documents/Desktop/ECE272Lab4 (searchpath added)
+INFO: Verilog design file = Z:/Windows.Documents/Desktop/ECE272Lab4/../LED State Machine/Source Files/Clock_Counter.v
+INFO: Verilog design file = Z:/Windows.Documents/Desktop/ECE272Lab4/../LED State Machine/Source Files/LED_FSM_top.v
+INFO: Verilog design file = Z:/Windows.Documents/Desktop/ECE272Lab4/../LED State Machine/Source Files/State_Machine.v
+INFO: Ngd file = Verilog_Lab_Verilog_Lab.ngd
+INFO: -sdc option: sdc file input not used
+INFO: -lpf option: output file option is OFF
+INFO: hardtimer checking is enabled (default); -dt option not used
+INFO: -r option is OFF [ Remove LOC Properties is OFF ]
+INFO: The default vhdl library search path is now "C:/lscc/diamond/2.2_x64/cae_library/vhdl_packages/vdbs" (VHDL-1504)
+INFO: * compile design *
+INFO: Compile Design Begin
+z:/windows.documents/desktop/ece272lab4/../led state machine/source files/led_fsm_top.v(1): INFO: compiling module LED_top_module (VERI-1018)
+C:/lscc/diamond/2.2_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): INFO: compiling module OSCH(NOM_FREQ="2.03") (VERI-1018)
+z:/windows.documents/desktop/ece272lab4/../led state machine/source files/clock_counter.v(1): INFO: compiling module clock_counter (VERI-1018)
+z:/windows.documents/desktop/ece272lab4/../led state machine/source files/state_machine.v(1): INFO: compiling module state_machine (VERI-1018)
+Last elaborated design is LED_top_module()
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/2.2_x64/ispfpga.
+Package Status:                     Final          Version 1.36
+INFO: Top level module name = LED_top_module
+
+Extracted state machine for register: \FSM_1/state
+State machine has 4 states with original encoding
+original encoding -> new encoding (OneHot Encoding)
+ 00 -> 0001
+ 01 -> 0010
+ 10 -> 0100
+ 11 -> 1000
+ Number of Reachable States for this State Machine are 4 
+
+
+
+INFO: GSR Instance connected to net: reset_n_c (LSE-1149)
+WARNING: No lpf file will be written because -lpf option is not used or set to 0
+WARNING - synthesis: WARNING: No lpf file will be written because -lpf option is not used or set to 0
+
+INFO: Applying 200.000000 MHz constraint to all clocks (LSE-5000)
+INFO: Results of ngd drc checks are available in LED_top_module_drc.log
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'counter_1/dff_11_34_add_4_1/S0' has no load
+WARNING - synthesis: logical net 'counter_1/dff_11_34_add_4_19/CO' has no load
+WARNING - synthesis: DRC complete with 2 warnings
+
+Design Results:
+     59 blocks expanded
+completed the first expansion
+INFO: All blocks are expanded and NGD expansion is successful
+INFO: Writing ngd file Verilog_Lab_Verilog_Lab.ngd
+
+################### Begin Area Report (LED_top_module)######################
+Number of register bits => 24 of 6864 (0 % )
+CCU2D => 10
+FD1S3AX => 4
+FD1S3AY => 1
+FD1S3IX => 19
+GSR => 1
+IB => 1
+LUT4 => 11
+OB => 8
+OSCH => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : clk, loads : 20
+  Net : clk_5, loads : 4
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : n27, loads : 20
+  Net : n94, loads : 5
+  Net : n25, loads : 4
+  Net : n24, loads : 3
+  Net : count_0, loads : 2
+  Net : count_2, loads : 2
+  Net : count_5, loads : 2
+  Net : count_3, loads : 2
+  Net : count_1, loads : 2
+  Net : count_15, loads : 2
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets clk_5]                   |  200.000 MHz|  471.921 MHz|     1  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk]                     |            -|            -|     0  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 59.727  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.281  secs
+--------------------------------------------------------------

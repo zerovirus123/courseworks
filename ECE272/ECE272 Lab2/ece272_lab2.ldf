@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="2.0" title="ece272_lab2" device="LCMXO2-7000HE-4TG144C" synthesis="lse" default_implementation="ece272_lab2">
+    <Options/>
+    <Implementation title="ece272_lab2" dir="ece272_lab2" description="ece272_lab2" default_strategy="Strategy1">
+        <Options/>
+        <Source name="ece272_lab2/RemoteControllerSchematic.sch" type="Schematic" type_short="Schematic">
+            <Options top_module="RemoteControllerSchematic"/>
+        </Source>
+        <Source name="RemoteControllerSchematic_tf.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="ece272_lab2.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="ece272_lab2/ece272_lab2.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="ece272_lab21.sty"/>
+</BaliProject>

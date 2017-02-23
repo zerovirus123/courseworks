@@ -1,0 +1,34 @@
+---------------------------------------------------
+Report for cell SmartRemote
+   Instance path: SmartRemote
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       4.00        100.0
+                                  LUT4	       8.00        100.0
+                                 IOBUF	          9        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                  mux2	          1        12.5
+                               mux2_U0	          1         8.3
+             RemoteControllerSchematic	          1        62.5
+---------------------------------------------------
+Report for cell RemoteControllerSchematic
+   Instance path: SmartRemote/myremote
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       2.50        62.5
+                                  LUT4	       5.00        62.5
+---------------------------------------------------
+Report for cell mux2
+   Instance path: SmartRemote/RD_MUX
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.50        12.5
+                                  LUT4	       1.00        12.5
+---------------------------------------------------
+Report for cell mux2_U0
+   Instance path: SmartRemote/LD_MUX
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         8.3
+                                  LUT4	       0.50         6.3

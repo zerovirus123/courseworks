@@ -1,0 +1,32 @@
+-a "MachXO2"
+-d LCMXO2-7000HE
+-t TQFP144
+-s 4
+-frequency 200
+-optimization_goal Balanced
+-bram_utilization 100
+-ramstyle Auto
+-romstyle auto
+-use_carry_chain 1
+-carry_chain_length 0
+-force_gsr Auto
+-resource_sharing 1
+-propagate_constants 1
+-remove_duplicate_regs 1
+-mux_style Auto
+-max_fanout 1000
+-fsm_encoding_style Auto
+-twr_paths 3
+-use_io_insertion 1
+-resolve_mixed_drivers 0
+-use_io_reg 1
+
+-lpf 0
+-p "Z:/Windows.Documents/Desktop/ECE272 Lab2"
+-ver "Z:/Windows.Documents/Desktop/ECE272 Lab2/ece272_lab2/RemoteControllerSchematic.v"
+
+
+-p "C:/lscc/diamond/2.2_x64/ispfpga/xo2c00/data" "Z:/Windows.Documents/Desktop/ECE272 Lab2/ece272_lab2" "Z:/Windows.Documents/Desktop/ECE272 Lab2"
+
+-ngd "ece272_lab2_ece272_lab2.ngd"
+

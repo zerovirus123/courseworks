@@ -1,0 +1,26 @@
+
+ldbanno "ECE272_Lab3_ECE272_Lab3.ncd" -n Verilog  -o "ECE272_Lab3_ECE272_Lab3_vo.vo"         -w -neg
+ldbanno: version Diamond (64-bit) 2.2.0.101
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2013 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the ECE272_Lab3_ECE272_Lab3 design file.
+
+
+Loading design for application ldbanno from file ECE272_Lab3_ECE272_Lab3.ncd.
+Design name: lab3_schematic
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application ldbanno from file 'xo2c7000.nph' in environment: C:/lscc/diamond/2.2_x64/ispfpga.
+Package Status:                     Final          Version 1.36
+Performance Hardware Data Status:   Final)         Version 23.4
+Converting design "ECE272_Lab3_ECE272_Lab3.ncd" into .ldb format.
+Loading preferences from "ece272_lab3_ece272_lab3.prf"...
+Writing Verilog netlist to file ECE272_Lab3_ECE272_Lab3_vo.vo
+Writing SDF timing to file ECE272_Lab3_ECE272_Lab3_vo.sdf

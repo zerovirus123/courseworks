@@ -1,0 +1,26 @@
+PAR: Place And Route Diamond (64-bit) 2.2.0.101.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2013 Lattice Semiconductor Corporation,  All rights reserved.
+Mon May 12 13:34:39 2014
+
+C:/lscc/diamond/2.2_x64/ispfpga\bin\nt64\par -f Lab4_Remote_Lab4_Remote.p2t
+Lab4_Remote_Lab4_Remote_map.ncd Lab4_Remote_Lab4_Remote.dir
+Lab4_Remote_Lab4_Remote.prf
+
+
+Preference file: Lab4_Remote_Lab4_Remote.prf.
+
+Level/      Number      Worst       Timing      Run         NCD
+Cost [ncd]  Unrouted    Slack       Score       Time        Status
+----------  --------    -----       --------    -----       ------
+5_1   *     0           -           -           05          Complete        
+
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 5 secs 
+
+par done!

@@ -1,0 +1,19 @@
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/2.2_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'CS_n' has no load
+WARNING - synthesis: input pad net 'CS_n' has no legal load
+WARNING - synthesis: logical net 'RD_n' has no load
+WARNING - synthesis: input pad net 'RD_n' has no legal load
+WARNING - synthesis: logical net 'WR_n' has no load
+WARNING - synthesis: input pad net 'WR_n' has no legal load
+WARNING - synthesis: DRC complete with 6 warnings
+
+Design Results:
+     12 blocks expanded
+completed the first expansion

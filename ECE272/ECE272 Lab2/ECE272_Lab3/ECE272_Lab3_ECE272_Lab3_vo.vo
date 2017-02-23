@@ -1,0 +1,637 @@
+
+// Verilog netlist produced by program ldbanno, Version Diamond (64-bit) 2.2.0.101
+
+// ldbanno -n Verilog -o ECE272_Lab3_ECE272_Lab3_vo.vo -w -neg ECE272_Lab3_ECE272_Lab3.ncd 
+// Netlist created on Wed Apr 30 13:38:48 2014
+// Netlist written on Wed May 07 10:33:58 2014
+// Design is for device LCMXO2-7000HE
+// Design is for package TQFP144
+// Design is for performance grade 4
+
+`timescale 1 ns / 1 ps
+
+module lab3_schematic ( A, B, C, D, seg_a, seg_b, seg_c, seg_d, seg_e, seg_f, 
+                        seg_g );
+  input  A, B, C, D;
+  output seg_a, seg_b, seg_c, seg_d, seg_e, seg_f, seg_g;
+  wire   A_c, N_17, N_19, D_c, B_c, C_c, seg_c_c, N_21, N_20, seg_e_c, N_28, 
+         N_30, N_29, seg_g_c, N_27, N_26, N_24, N_25, seg_f_c, N_13, N_15, 
+         N_14, N_16, seg_d_c, N_1, N_2, N_4, N_3, seg_b_c, N_9, N_11, N_12, 
+         N_10, seg_a_c, VCCI;
+
+  SLICE_0 SLICE_0( .D1(A_c), .C1(N_17), .B1(N_19), .A1(D_c), .D0(B_c), 
+    .C0(C_c), .B0(D_c), .A0(A_c), .F0(N_17), .F1(seg_c_c));
+  SLICE_1 SLICE_1( .D1(A_c), .C1(N_21), .B1(N_20), .A1(D_c), .D0(B_c), 
+    .C0(C_c), .A0(D_c), .F0(N_21), .F1(seg_e_c));
+  SLICE_2 SLICE_2( .D1(N_28), .C1(N_30), .B1(N_29), .D0(C_c), .C0(B_c), 
+    .B0(A_c), .F0(N_30), .F1(seg_g_c));
+  SLICE_3 SLICE_3( .D1(N_27), .C1(N_26), .B1(N_24), .A1(N_25), .D0(B_c), 
+    .C0(A_c), .A0(C_c), .F0(N_25), .F1(seg_f_c));
+  SLICE_4 SLICE_4( .D1(N_13), .C1(N_15), .B1(N_14), .A1(N_16), .D0(D_c), 
+    .C0(C_c), .A0(B_c), .F0(N_16), .F1(seg_d_c));
+  SLICE_5 SLICE_5( .D1(N_1), .C1(N_2), .B1(N_4), .A1(N_3), .C0(C_c), .B0(D_c), 
+    .A0(A_c), .F0(N_4), .F1(seg_b_c));
+  SLICE_6 SLICE_6( .D1(C_c), .C1(D_c), .B1(B_c), .A1(A_c), .D0(N_9), .C0(N_11), 
+    .B0(N_12), .A0(N_10), .F0(seg_a_c), .F1(N_12));
+  SLICE_7 SLICE_7( .D1(B_c), .C1(D_c), .B1(C_c), .A1(A_c), .D0(B_c), .C0(D_c), 
+    .B0(C_c), .A0(A_c), .F0(N_28), .F1(N_10));
+  SLICE_8 SLICE_8( .D1(A_c), .C1(D_c), .B1(C_c), .A1(B_c), .D0(A_c), .C0(D_c), 
+    .B0(C_c), .A0(B_c), .F0(N_29), .F1(N_9));
+  SLICE_9 SLICE_9( .D1(A_c), .C1(D_c), .B1(C_c), .A1(B_c), .D0(A_c), .C0(D_c), 
+    .B0(C_c), .A0(B_c), .F0(N_24), .F1(N_11));
+  SLICE_10 SLICE_10( .D1(B_c), .C1(C_c), .B1(A_c), .A1(D_c), .D0(B_c), 
+    .C0(C_c), .B0(A_c), .A0(D_c), .F0(N_13), .F1(N_3));
+  SLICE_11 SLICE_11( .D1(D_c), .C1(A_c), .B1(B_c), .A1(C_c), .D0(D_c), 
+    .C0(A_c), .B0(B_c), .A0(C_c), .F0(N_14), .F1(N_2));
+  SLICE_12 SLICE_12( .D1(C_c), .C1(D_c), .B1(A_c), .A1(B_c), .D0(C_c), 
+    .C0(D_c), .B0(A_c), .A0(B_c), .F0(N_15), .F1(N_1));
+  SLICE_13 SLICE_13( .D1(A_c), .C1(C_c), .B1(B_c), .D0(A_c), .C0(C_c), 
+    .B0(B_c), .F0(N_20), .F1(N_19));
+  SLICE_14 SLICE_14( .D1(C_c), .B1(A_c), .A1(D_c), .C0(B_c), .B0(A_c), 
+    .A0(D_c), .F0(N_26), .F1(N_27));
+  B B_I( .PADDI(B_c), .B(B));
+  A A_I( .PADDI(A_c), .A(A));
+  seg_g seg_g_I( .PADDO(seg_g_c), .seg_g(seg_g));
+  seg_f seg_f_I( .PADDO(seg_f_c), .seg_f(seg_f));
+  seg_e seg_e_I( .PADDO(seg_e_c), .seg_e(seg_e));
+  seg_d seg_d_I( .PADDO(seg_d_c), .seg_d(seg_d));
+  seg_c seg_c_I( .PADDO(seg_c_c), .seg_c(seg_c));
+  seg_b seg_b_I( .PADDO(seg_b_c), .seg_b(seg_b));
+  seg_a seg_a_I( .PADDO(seg_a_c), .seg_a(seg_a));
+  C C_I( .PADDI(C_c), .C(C));
+  D D_I( .PADDI(D_c), .D(D));
+  VHI VHI_INST( .Z(VCCI));
+  PUR PUR_INST( .PUR(VCCI));
+  GSR GSR_INST( .GSR(VCCI));
+endmodule
+
+module SLICE_0 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut4 I15( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40001 I23( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut4 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFCFE) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40001 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0800) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_1 ( input D1, C1, B1, A1, D0, C0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40002 I25( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40003 I26( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40002 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFDFC) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40003 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h5000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module SLICE_2 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40004 I36( .A(GNDI), .B(B1), .C(C1), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40005 I33( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40004 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFFFC) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40005 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hC000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_3 ( input D1, C1, B1, A1, D0, C0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40006 I32( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40007 I28( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40006 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFFFE) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40007 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h5000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_4 ( input D1, C1, B1, A1, D0, C0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40008 I19( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40009 I16( .A(A0), .B(GNDI), .C(C0), .D(D0), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40008 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFFFE) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40009 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0005) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_5 ( input D1, C1, B1, A1, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40010 I11( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40011 I10( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40010 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFFFE) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40011 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0101) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_6 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40012 I6( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40013 I5( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40012 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0004) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40013 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFFFE) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_7 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40014 I7( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40015 I34( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40014 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0004) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40015 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h4000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_8 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40016 I8( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40017 I35( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40016 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h4000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40017 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0100) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_9 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40018 I9( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40019 I31( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40018 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0800) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40019 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0004) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_10 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40020 I12( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40021 I20( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40020 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0040) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40021 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0200) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_11 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40022 I13( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40023 I21( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40022 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h1000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40023 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h2000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_12 ( input D1, C1, B1, A1, D0, C0, B0, A0, output F0, F1 );
+
+  lut40024 I14( .A(A1), .B(B1), .C(C1), .D(D1), .Z(F1));
+  lut40025 I22( .A(A0), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40024 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h1000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40025 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0800) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_13 ( input D1, C1, B1, D0, C0, B0, output F0, F1 );
+  wire   GNDI;
+
+  lut40026 I18( .A(GNDI), .B(B1), .C(C1), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40027 I27( .A(GNDI), .B(B0), .C(C0), .D(D0), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (C1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (D0 => F0) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40026 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0003) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40027 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h3000) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module SLICE_14 ( input D1, B1, A1, C0, B0, A0, output F0, F1 );
+  wire   GNDI;
+
+  lut40028 I30( .A(A1), .B(B1), .C(GNDI), .D(D1), .Z(F1));
+  gnd DRIVEGND( .PWR0(GNDI));
+  lut40029 I29( .A(A0), .B(B0), .C(C0), .D(GNDI), .Z(F0));
+
+  specify
+    (D1 => F1) = (0:0:0,0:0:0);
+    (B1 => F1) = (0:0:0,0:0:0);
+    (A1 => F1) = (0:0:0,0:0:0);
+    (C0 => F0) = (0:0:0,0:0:0);
+    (B0 => F0) = (0:0:0,0:0:0);
+    (A0 => F0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut40028 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h0044) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40029 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'h4040) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module B ( output PADDI, input B );
+
+  xo2iobuf B_pad( .Z(PADDI), .PAD(B));
+
+  specify
+    (B => PADDI) = (0:0:0,0:0:0);
+    $width (posedge B, 0:0:0);
+    $width (negedge B, 0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf ( output Z, input PAD );
+
+  IBPU INST1( .I(PAD), .O(Z));
+endmodule
+
+module A ( output PADDI, input A );
+
+  xo2iobuf A_pad( .Z(PADDI), .PAD(A));
+
+  specify
+    (A => PADDI) = (0:0:0,0:0:0);
+    $width (posedge A, 0:0:0);
+    $width (negedge A, 0:0:0);
+  endspecify
+
+endmodule
+
+module seg_g ( input PADDO, output seg_g );
+  wire   GNDI;
+
+  xo2iobuf0030 seg_g_pad( .I(PADDO), .T(GNDI), .PAD(seg_g));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => seg_g) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf0030 ( input I, T, output PAD );
+
+  OBZPD INST5( .I(I), .T(T), .O(PAD));
+endmodule
+
+module seg_f ( input PADDO, output seg_f );
+  wire   GNDI;
+
+  xo2iobuf0030 seg_f_pad( .I(PADDO), .T(GNDI), .PAD(seg_f));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => seg_f) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module seg_e ( input PADDO, output seg_e );
+  wire   GNDI;
+
+  xo2iobuf0030 seg_e_pad( .I(PADDO), .T(GNDI), .PAD(seg_e));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => seg_e) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module seg_d ( input PADDO, output seg_d );
+  wire   GNDI;
+
+  xo2iobuf0030 seg_d_pad( .I(PADDO), .T(GNDI), .PAD(seg_d));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => seg_d) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module seg_c ( input PADDO, output seg_c );
+  wire   GNDI;
+
+  xo2iobuf0030 seg_c_pad( .I(PADDO), .T(GNDI), .PAD(seg_c));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => seg_c) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module seg_b ( input PADDO, output seg_b );
+  wire   GNDI;
+
+  xo2iobuf0030 seg_b_pad( .I(PADDO), .T(GNDI), .PAD(seg_b));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => seg_b) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module seg_a ( input PADDO, output seg_a );
+  wire   GNDI;
+
+  xo2iobuf0030 seg_a_pad( .I(PADDO), .T(GNDI), .PAD(seg_a));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => seg_a) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module C ( output PADDI, input C );
+
+  xo2iobuf C_pad( .Z(PADDI), .PAD(C));
+
+  specify
+    (C => PADDI) = (0:0:0,0:0:0);
+    $width (posedge C, 0:0:0);
+    $width (negedge C, 0:0:0);
+  endspecify
+
+endmodule
+
+module D ( output PADDI, input D );
+
+  xo2iobuf D_pad( .Z(PADDI), .PAD(D));
+
+  specify
+    (D => PADDI) = (0:0:0,0:0:0);
+    $width (posedge D, 0:0:0);
+    $width (negedge D, 0:0:0);
+  endspecify
+
+endmodule

@@ -1,0 +1,43 @@
+----------------------------------------------------------------------
+Report for cell SmartRemote.<NoName>
+Register bits:  0 of 6864 (0.000%)
+I/O cells:      9
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         3          100.0
+                               AND3         2          100.0
+                                GSR         1          100.0
+                                 IB         5          100.0
+                                INV         3          100.0
+                               LUT4         4          100.0
+                                 OB         4          100.0
+                                OR2         3          100.0
+SUB MODULES
+          RemoteControllerSchematic         1
+                               mux2         1
+                            mux2_U0         1
+                              TOTAL        28
+----------------------------------------------------------------------
+Report for cell RemoteControllerSchematic.v1
+Instance Path : myremote
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         3          100.0
+                               AND3         2          100.0
+                                INV         3          100.0
+                                OR2         3          100.0
+                              TOTAL        11
+----------------------------------------------------------------------
+Report for cell mux2.v1
+Instance Path : RD_MUX
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1           25.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell mux2_U0.v1
+Instance Path : LD_MUX
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1           25.0
+                              TOTAL         1

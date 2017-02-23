@@ -1,0 +1,1 @@
+To compile code, just type in gcc -o smallsh smallish.c

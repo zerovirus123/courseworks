@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="2.0" title="ECE272Final" device="LCMXO2-7000HE-4TG144C" synthesis="lse" default_implementation="ECE272Final">
+    <Options/>
+    <Implementation title="ECE272Final" dir="ECE272Final" description="ECE272Final" default_strategy="Strategy1">
+        <Options def_top="checkpoint2"/>
+        <Source name="FinalProject.v" type="Verilog" type_short="Verilog">
+            <Options top_module="checkpoint2"/>
+        </Source>
+        <Source name="ECE272Final.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="ECE272Final1.sty"/>
+</BaliProject>

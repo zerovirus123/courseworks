@@ -1,0 +1,25 @@
+----------------------------------------------------------------------
+Report for cell checkpoint2.<NoName>
+Register bits:  15 of 6864 (0.219%)
+I/O cells:      11
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         8          100.0
+                            FD1S3AX        15          100.0
+                                GSR         1          100.0
+                                 IB         1          100.0
+                               LUT4         6          100.0
+                                 OB        10          100.0
+                               OSCH         1          100.0
+SUB MODULES
+                           sevenseg         1
+                              TOTAL        43
+----------------------------------------------------------------------
+Report for cell sevenseg.v1
+Instance Path : seven
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         8          100.0
+                            FD1S3AX        15          100.0
+                               LUT4         5           83.3
+                              TOTAL        28

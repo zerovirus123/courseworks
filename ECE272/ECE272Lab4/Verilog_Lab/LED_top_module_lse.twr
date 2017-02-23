@@ -1,0 +1,134 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed May 07 13:54:45 2014
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2013 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     LED_top_module
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets clk_5]
+            4 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 2.881ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AY    CK             \FSM_1/state_FSM_i0  (from \counter_1/clk_o_13 +)
+   Destination:    FD1S3AX    D              \FSM_1/state_FSM_i1  (to \counter_1/clk_o_13 +)
+
+   Delay:                   1.959ns  (22.7% logic, 77.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.959ns data_path \FSM_1/state_FSM_i0 to \FSM_1/state_FSM_i1 meets
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 2.881ns
+
+ Path Details: \FSM_1/state_FSM_i0 to \FSM_1/state_FSM_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \FSM_1/state_FSM_i0 (from \counter_1/clk_o_13)
+Route         6   e 1.515                                  n94
+                  --------
+                    1.959  (22.7% logic, 77.3% route), 1 logic levels.
+
+
+Passed:  The following path meets requirements by 2.998ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \FSM_1/state_FSM_i1  (from \counter_1/clk_o_13 +)
+   Destination:    FD1S3AX    D              \FSM_1/state_FSM_i2  (to \counter_1/clk_o_13 +)
+
+   Delay:                   1.842ns  (24.1% logic, 75.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.842ns data_path \FSM_1/state_FSM_i1 to \FSM_1/state_FSM_i2 meets
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 2.998ns
+
+ Path Details: \FSM_1/state_FSM_i1 to \FSM_1/state_FSM_i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \FSM_1/state_FSM_i1 (from \counter_1/clk_o_13)
+Route         4   e 1.398                                  \FSM_1/n25
+                  --------
+                    1.842  (24.1% logic, 75.9% route), 1 logic levels.
+
+
+Passed:  The following path meets requirements by 3.081ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \FSM_1/state_FSM_i2  (from \counter_1/clk_o_13 +)
+   Destination:    FD1S3AX    D              \FSM_1/state_FSM_i3  (to \counter_1/clk_o_13 +)
+
+   Delay:                   1.759ns  (25.2% logic, 74.8% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.759ns data_path \FSM_1/state_FSM_i2 to \FSM_1/state_FSM_i3 meets
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 3.081ns
+
+ Path Details: \FSM_1/state_FSM_i2 to \FSM_1/state_FSM_i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \FSM_1/state_FSM_i2 (from \counter_1/clk_o_13)
+Route         3   e 1.315                                  \FSM_1/n24
+                  --------
+                    1.759  (25.2% logic, 74.8% route), 1 logic levels.
+
+Report: 2.119 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets clk_5]                   |     5.000 ns|     2.119 ns|     1  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk]                     |            -|            -|     0  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  4 paths, 5 nets, and 8 connections (6.7% coverage)
+
+
+Peak memory: 62332928 bytes, TRCE: 1323008 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

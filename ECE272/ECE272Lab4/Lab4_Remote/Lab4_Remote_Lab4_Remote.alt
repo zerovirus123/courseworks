@@ -1,0 +1,17 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Mon May 12 13:34:47 2014 *
+NOTE DESIGN NAME: SmartRemote *
+NOTE DEVICE NAME: LCMXO2-7000HE-4TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS LD_o : 105 : out *
+NOTE PINS B : 39 : in *
+NOTE PINS C : 40 : in *
+NOTE PINS A : 38 : in *
+NOTE PINS LE_o : 104 : out *
+NOTE PINS RD_o : 107 : out *
+NOTE PINS RE_o : 106 : out *
+NOTE PINS ANLG_Rdir : 99 : in *
+NOTE PINS ANLG_Ldir : 100 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

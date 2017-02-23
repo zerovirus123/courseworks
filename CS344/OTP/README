@@ -1,0 +1,20 @@
+To run the program on Linux, type ./compileall to compile program.
+
+Usage:
+	Generate a key using keygen
+	Length must be at least as long as the plaintext string to encrypt/decrypt
+	Syntax: keygen keyLength
+	Example: keygen 256 > key
+
+	Let otp_enc_d and otp_dec_d run in the background
+	Syntax: otp_enc_d port / otp_dec_d port
+	Example: otp_enc_d 30000 &
+	Example: otp_dec_d 30001 &
+
+	Encrypt a plaintext string (NOTE: otp_enc_d must run in background)
+	Syntax: otp_enc plaintext key port
+	Example: otp_enc plaintext key 30000 > ciphertext
+
+	Decrypt a ciphertext string (NOTE: otp_dec_d must run in background)
+	Syntax: otp_dec ciphertext key port 
+	Example: otp_dec ciphertext key 30001 > plaintext
